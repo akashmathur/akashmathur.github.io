@@ -25,6 +25,12 @@
      color:#222222!important;
      background-color:#fff!important 
 }
+
+.mobile-hover-link:hover{
+    color:#222222!important;
+     background-color:#fff!important
+    
+}
  .skills-spacing {
      margin-top:8px!important;
      margin-bottom:8px!important 
