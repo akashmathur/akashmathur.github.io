@@ -6,29 +6,28 @@
 $(".homeButton").click(function() {
     $('html, body').animate({
         scrollTop: $("#body").offset().top
-    }, 1500);
+    }, 1000);
 });
 
 $(".aboutButton").click(function() {
     $('html, body').animate({
         scrollTop: $("#about").offset().top
-    }, 1500);
+    }, 1000);
 });
 
 $(".portfolioButton").click(function() {
     $('html, body').animate({
         scrollTop: $("#portfolio").offset().top
-    }, 1500);
+    }, 1000);
 });
 
 $(".contactButton").click(function() {
     $('html, body').animate({
         scrollTop: $("#contact").offset().top
-    }, 1500);
+    }, 1000);
 
     $("#contact-animation").addClass("animated");
     $("#contact-animation").addClass("tada");
-    $("#contact-animation").addClass("delay-1s");
 });
 
 
@@ -46,14 +45,7 @@ $(window).scroll(function() {
 }).scroll();
 
 
-function fix()
-{
-    var el = this;
-    var par = el.parentNode;
-    var next = el.nextSibling;
-    par.removeChild(el);
-    setTimeout(function() {par.insertBefore(el, next);}, 0)
-}
+
 
 ////Stack Overflow solution to remove hover on touch devices
 //function hasTouch() {
