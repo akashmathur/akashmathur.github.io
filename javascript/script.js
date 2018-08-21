@@ -1,8 +1,104 @@
-//$(document).ready(function() {
-//    $('html, body').animate({
-//        scrollTop: $("#body").offset().top
-//    }, 1000);
-//});
+$(document).ready(function() {
+
+    // code to hover on both link and picture mouseovers
+    // this makes it look like the same entity being clicked
+    $(".pic-GIS-hover").hover(function() {
+        $(".para-GIS-hover").css("opacity", "0.60");
+        $(".pic-GIS-hover").css("opacity", "0.60");
+    }, function() {
+        $(".para-GIS-hover").css("opacity", "1.0");
+        $(".pic-GIS-hover").css("opacity", "1.0");
+    });
+
+    $(".para-GIS-hover").hover(function() {
+        $(".pic-GIS-hover").css("opacity", "0.60");
+        $(".para-GIS-hover").css("opacity", "0.60");
+    }, function() {
+        $(".pic-GIS-hover").css("opacity", "1.0");
+        $(".para-GIS-hover").css("opacity", "1.0");
+    });
+
+    $(".pic-lego-hover").hover(function() {
+        $(".para-lego-hover").css("opacity", "0.60");
+        $(".pic-lego-hover").css("opacity", "0.60");
+    }, function() {
+        $(".para-lego-hover").css("opacity", "1.0");
+        $(".pic-lego-hover").css("opacity", "1.0");
+    });
+
+    $(".para-lego-hover").hover(function() {
+        $(".pic-lego-hover").css("opacity", "0.60");
+        $(".para-lego-hover").css("opacity", "0.60");
+    }, function() {
+        $(".pic-lego-hover").css("opacity", "1.0");
+        $(".para-lego-hover").css("opacity", "1.0");
+    });
+
+    $(".pic-arduino-hover").hover(function() {
+        $(".para-arduino-hover").css("opacity", "0.60");
+        $(".pic-arduino-hover").css("opacity", "0.60");
+    }, function() {
+        $(".para-arduino-hover").css("opacity", "1.0");
+        $(".pic-arduino-hover").css("opacity", "1.0");
+    });
+
+    $(".para-arduino-hover").hover(function() {
+        $(".pic-arduino-hover").css("opacity", "0.60");
+        $(".para-arduino-hover").css("opacity", "0.60");
+    }, function() {
+        $(".pic-arduino-hover").css("opacity", "1.0");
+        $(".para-arduino-hover").css("opacity", "1.0");
+    });
+
+    $(".pic-website-hover").hover(function() {
+        $(".para-website-hover").css("opacity", "0.60");
+        $(".pic-website-hover").css("opacity", "0.60");
+    }, function() {
+        $(".para-website-hover").css("opacity", "1.0");
+        $(".pic-website-hover").css("opacity", "1.0");
+    });
+
+    $(".para-website-hover").hover(function() {
+        $(".pic-website-hover").css("opacity", "0.60");
+        $(".para-website-hover").css("opacity", "0.60");
+    }, function() {
+        $(".pic-website-hover").css("opacity", "1.0");
+        $(".para-website-hover").css("opacity", "1.0");
+    });
+    
+     $(".pic-c51-hover").hover(function() {
+        $(".para-c51-hover").css("opacity", "0.60");
+        $(".pic-c51-hover").css("opacity", "0.60");
+    }, function() {
+        $(".para-c51-hover").css("opacity", "1.0");
+        $(".pic-c51-hover").css("opacity", "1.0");
+    });
+
+    $(".para-c51-hover").hover(function() {
+        $(".pic-c51-hover").css("opacity", "0.60");
+        $(".para-c51-hover").css("opacity", "0.60");
+    }, function() {
+        $(".pic-c51-hover").css("opacity", "1.0");
+        $(".para-c51-hover").css("opacity", "1.0");
+    });
+    
+     $(".pic-raingrid-hover").hover(function() {
+        $(".para-raingrid-hover").css("opacity", "0.60");
+        $(".pic-raingrid-hover").css("opacity", "0.60");
+    }, function() {
+        $(".para-raingrid-hover").css("opacity", "1.0");
+        $(".pic-raingrid-hover").css("opacity", "1.0");
+    });
+
+    $(".para-raingrid-hover").hover(function() {
+        $(".pic-raingrid-hover").css("opacity", "0.60");
+        $(".para-raingrid-hover").css("opacity", "0.60");
+    }, function() {
+        $(".pic-raingrid-hover").css("opacity", "1.0");
+        $(".para-raingrid-hover").css("opacity", "1.0");
+    });
+
+});
 
 $(".homeButton").click(function() {
     $('html, body').animate({
