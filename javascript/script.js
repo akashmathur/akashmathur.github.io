@@ -3,6 +3,7 @@
 //        scrollTop: $("#body").offset().top
 //    }, 1000);
 //});
+
 $(".homeButton").click(function() {
     $('html, body').animate({
         scrollTop: $("#body").offset().top
