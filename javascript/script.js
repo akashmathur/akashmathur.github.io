@@ -2,7 +2,7 @@ $(document).ready(function() {
     
     
     
-function hoverTouchUnstick() {
+
   // Check if the device supports touch events
   if('ontouchstart' in document.documentElement) {
     // Loop through each stylesheet
@@ -22,7 +22,7 @@ function hoverTouchUnstick() {
       }
     }
   }
-}
+
     
     
     
