@@ -4,7 +4,7 @@ $(document).ready(function() {
     
 
   // Check if the device supports touch events
-  if('ontouchstart' in document.documentElement) {
+//  if('ontouchstart' in document.documentElement) {
     // Loop through each stylesheet
     for(var sheetI = document.styleSheets.length - 1; sheetI >= 0; sheetI--) {
       var sheet = document.styleSheets[sheetI];
@@ -21,7 +21,7 @@ $(document).ready(function() {
         }
       }
     }
-  }
+  //}
 
     
     
