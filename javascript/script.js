@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // code to hover on both link and picture mouseovers
     // this makes it look like the same entity being clicked
-    $(".pic-GIS-hover").hover(function() {
+    /*$(".pic-GIS-hover").hover(function() {
         $(".para-GIS-hover").css("opacity", "0.60");
         $(".pic-GIS-hover").css("opacity", "0.60");
     }, function() {
@@ -96,7 +96,7 @@ $(document).ready(function() {
     }, function() {
         $(".pic-raingrid-hover").css("opacity", "1.0");
         $(".para-raingrid-hover").css("opacity", "1.0");
-    });
+    });*/
 
 });
 
@@ -141,28 +141,28 @@ $(window).scroll(function() {
     }
 }).scroll();
 
-
-function hoverTouchUnstick() {
-  // Check if the device supports touch events
-  if('ontouchstart' in document.documentElement) {
-    // Loop through each stylesheet
-    for(var sheetI = document.styleSheets.length - 1; sheetI >= 0; sheetI--) {
-      var sheet = document.styleSheets[sheetI];
-      // Verify if cssRules exists in sheet
-      if(sheet.cssRules) {
-        // Loop through each rule in sheet
-        for(var ruleI = sheet.cssRules.length - 1; ruleI >= 0; ruleI--) {
-          var rule = sheet.cssRules[ruleI];
-          // Verify rule has selector text
-          if(rule.selectorText) {
-            // Replace hover psuedo-class with active psuedo-class
-            rule.selectorText = rule.selectorText.replace(":hover", ":active");
-          }
-        }
-      }
-    }
-  }
-}
+//
+//function hoverTouchUnstick() {
+//  // Check if the device supports touch events
+//  if('ontouchstart' in document.documentElement) {
+//    // Loop through each stylesheet
+//    for(var sheetI = document.styleSheets.length - 1; sheetI >= 0; sheetI--) {
+//      var sheet = document.styleSheets[sheetI];
+//      // Verify if cssRules exists in sheet
+//      if(sheet.cssRules) {
+//        // Loop through each rule in sheet
+//        for(var ruleI = sheet.cssRules.length - 1; ruleI >= 0; ruleI--) {
+//          var rule = sheet.cssRules[ruleI];
+//          // Verify rule has selector text
+//          if(rule.selectorText) {
+//            // Replace hover psuedo-class with active psuedo-class
+//            rule.selectorText = rule.selectorText.replace(":hover", ":active");
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
 
 ////Stack Overflow solution to remove hover on touch devices
 //function hasTouch() {
