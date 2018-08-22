@@ -1,10 +1,14 @@
 $(document).ready(function() {
     
-    
+var isMobile = false;
+
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+ isMobile = true;
+}
     
 
-  // Check if the device supports touch events
-//  if('ontouchstart' in document.documentElement) {
+//  // Check if the device supports touch events
+  if(isMobile == true) {
     // Loop through each stylesheet
     for(var sheetI = document.styleSheets.length - 1; sheetI >= 0; sheetI--) {
       var sheet = document.styleSheets[sheetI];
@@ -21,12 +25,8 @@ $(document).ready(function() {
         }
       }
     }
-  //}
-
-    
-    
-    
-    // code to hover on both link and picture mouseovers
+  } else {
+      // code to hover on both link and picture mouseovers
     // this makes it look like the same entity being clicked
     $(".pic-GIS-hover").hover(function() {
         $(".para-GIS-hover").css("opacity", "0.60");
@@ -123,6 +123,13 @@ $(document).ready(function() {
         $(".pic-raingrid-hover").css("opacity", "1.0");
         $(".para-raingrid-hover").css("opacity", "1.0");
     });
+      
+  }
+
+    
+    
+    
+    
 
 });
 
