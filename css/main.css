@@ -286,6 +286,13 @@ background-size: cover;
 	}
 }
 
+@media (max-width: 1150px) {
+	.better-content-display {
+		max-width: 80%;
+		margin: auto
+	}
+}
+
 @media (max-width: 600px) {
 	.mobile-custom {
 		display: block;

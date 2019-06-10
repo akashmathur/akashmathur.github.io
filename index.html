@@ -1,9 +1,9 @@
-<!--
-Changes:
-    - Better spacing for header icons (nav icons, hamburger menu)
-    - Optimized AOS fade animations for mobile rendering
--->
 
+
+<!--
+   Changes:
+       Improved content-display: content doesn't cover hamburger menu on widescreen mobile display or desktops
+   -->
 <!--Main Index Page-->
 <!DOCTYPE html>
 <html>
@@ -51,20 +51,20 @@ Changes:
                   <i class="fa fa-envelope w3-xxlarge"></i>
                   <p>CONTACT</p>
                   </a> -->
-                <div class="slide-in-left-delay" id="navOptions">
-               <a href="#" class="w3-bar-item w3-button nav-hover-color nav-color homeButton intro-para-link">
-                  <h4 class="w3-text-black w3-bar-item w3-button nav-hover-color nav-color">HOME</h4>
-               </a>
-               <a href="#" class="w3-bar-item w3-button nav-hover-color nav-color aboutButton">
-                  <h4 class="w3-text-black w3-bar-item w3-button nav-hover-color nav-color">ABOUT</h4>
-               </a>
-               <a href="#" class="w3-bar-item w3-button nav-hover-color nav-color portfolioButton">
-                  <h4 class="w3-text-black w3-bar-item w3-button nav-hover-color nav-color">PORTFOLIO</h4>
-               </a>
-               <a href="#" class="w3-bar-item w3-button nav-hover-color nav-color contactButton">
-                  <h4 class="w3-text-black w3-bar-item w3-button nav-hover-color nav-color">CONTACT</h4>
-               </a>
-                    </div>
+               <div class="slide-in-left-delay" id="navOptions">
+                  <a href="#" class="w3-bar-item w3-button nav-hover-color nav-color homeButton intro-para-link">
+                     <h4 class="w3-text-black w3-bar-item w3-button nav-hover-color nav-color">HOME</h4>
+                  </a>
+                  <a href="#" class="w3-bar-item w3-button nav-hover-color nav-color aboutButton">
+                     <h4 class="w3-text-black w3-bar-item w3-button nav-hover-color nav-color">ABOUT</h4>
+                  </a>
+                  <a href="#" class="w3-bar-item w3-button nav-hover-color nav-color portfolioButton">
+                     <h4 class="w3-text-black w3-bar-item w3-button nav-hover-color nav-color">PORTFOLIO</h4>
+                  </a>
+                  <a href="#" class="w3-bar-item w3-button nav-hover-color nav-color contactButton">
+                     <h4 class="w3-text-black w3-bar-item w3-button nav-hover-color nav-color">CONTACT</h4>
+                  </a>
+               </div>
             </div>
          </nav>
          <!-- Navbar on small screens (Hidden on medium and large screens) -->
@@ -79,36 +79,32 @@ Changes:
          <!-- Header/Home -->
          <header class="w3-container w3-center w3-white padding-large" id="home">
             <div class="w3-display-middle">
-                
-                
                <h1 class="w3-jumbo fade-in margin-0">Hi, I'm Akash!</h1>
                <h2 class="w3-large fade-in margin-0">Engineer.</h2>
                <h2 class="w3-large fade-in margin-0">Designer.</h2>
                <h2 class="w3-large fade-in margin-16-bottom">Aspiring Product Manager.</h2>
                <!--                <img src="images/akashpic1.png" alt="boy" class="w3-image fade-in" width="400"> -->
-                
-                <div class ="chevron-margin">
-               <a href="#" class="aboutButton "><i class="fa fa-chevron-down w3-xlarge shake-vertical chevronColor"></i></a>
+               <div class ="chevron-margin">
+                  <a href="#" class="aboutButton "><i class="fa fa-chevron-down w3-xlarge shake-vertical chevronColor"></i></a>
+               </div>
             </div>
-            </div>
-<!--
-            <div class ="w3-display-bottommiddle chevron-margin">
-               <a href="#" class="aboutButton "><i class="fa fa-chevron-down w3-xlarge shake-vertical chevronColor"></i></a>
-            </div>
--->
-             
+            <!--
+               <div class ="w3-display-bottommiddle chevron-margin">
+                  <a href="#" class="aboutButton "><i class="fa fa-chevron-down w3-xlarge shake-vertical chevronColor"></i></a>
+               </div>
+               -->
             <div class="w3-display-topright w3-hide-small bounce-in-top headerIconSpacing">
-               <a href="mailto:akash.mathur@mail.utoronto.ca" title="Email" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right headerIconScale"></i></a>
-               <a href="https://www.facebook.com/akashmathur97" target="_blank" title="Facebook" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-facebook fa-fw w3-xxlarge w3-margin-right headerIconScale" ></i></a>
-               <a href="http://instagram.com/_akashm" target="_blank" title="Instagram" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-instagram  fa-fw  w3-xxlarge w3-margin-right headerIconScale" ></i></a>
                <a href="https://www.linkedin.com/in/akash-mathur" target="_blank" title="LinkedIn" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-linkedin fa-fw  w3-xxlarge w3-margin-right headerIconScale"></i></a>
+               <a href="mailto:akash.mathur@mail.utoronto.ca" title="Email" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right headerIconScale"></i></a>
+               <a href="http://instagram.com/_akashm" target="_blank" title="Instagram" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-instagram  fa-fw  w3-xxlarge w3-margin-right headerIconScale" ></i></a>
+               <a href="https://www.facebook.com/akashmathur97" target="_blank" title="Facebook" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-facebook fa-fw w3-xxlarge w3-margin-right headerIconScale" ></i></a>
             </div>
          </header>
       </div>
       <!-- Page Content -->
       <div class="w3-padding-large" id="main" role="main">
          <!-- About Section -->
-         <div class="w3-content w3-justify w3-text-grey padding-24-top margin-4-top" id="about">
+         <div class="w3-content better-content-display w3-justify w3-text-grey padding-24-top margin-4-top" id="about">
             <div class="aos-item" data-aos="fade-up" data-aos-duration="400">
                <h2 class="w3-text-black"><i class="fa fa-user w3-xlarge w3-wide"></i>About Akash</h2>
                <hr style="width:200px" class="w3-opacity hr-color">
@@ -173,7 +169,7 @@ Changes:
             <!-- End About Section -->
          </div>
          <!-- Portfolio Section -->
-         <div class="w3-content w3-justify w3-text-grey padding-24-top" id="portfolio">
+         <div class="w3-content better-content-display w3-justify w3-text-grey padding-24-top" id="portfolio">
             <div class="aos-item" data-aos="fade-up" data-aos-duration="400">
                <h2 class="w3-text-black" style="display: inline-block"><i class="fa fa-folder-open w3-xlarge w3-wide"></i>Portfolio</h2>
                <!--
@@ -249,7 +245,7 @@ Changes:
             <!-- End Portfoio Section -->
          </div>
          <!-- Contact Section -->
-         <div class="w3-content w3-text-black aos-item" data-aos="fade-up" data-aos-duration="400" id="contact">
+         <div class="w3-content better-content-display w3-text-black aos-item" data-aos="fade-up" data-aos-duration="400" id="contact">
             <div class="contact-info">
                <hr class="hr-color contact-info w3-opacity">
                <h2 class="w3-text-black">Let's Keep In Touch!</h2>
@@ -281,7 +277,7 @@ Changes:
             <br>
             <!-- End Contact Section -->
          </div>
-         <footer class="w3-content padding-8 w3-text-grey w3-xlarge w3-center" >
+         <footer class="w3-content better-content-display padding-8 w3-text-grey w3-xlarge w3-center" >
             <p class="w3-medium" id="footer-content">Akash Mathur 2019</p>
          </footer>
          <!-- END PAGE CONTENT -->
