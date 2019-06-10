@@ -349,8 +349,8 @@
 }
  .w3-sidebar{
      height:100%;
-     width:120px;
-     background-color:#222222;
+     width:200px;
+     background-color:#ffffff;
      position:fixed!important;
      z-index:1;
      overflow:auto 
@@ -612,6 +612,8 @@
          width:100% 
     }
 }
+
+
  @media (max-width:768px){
      .w3-modal-content{
          width:500px 
@@ -836,7 +838,7 @@
 }
  .w3-animate-left{
      position:relative;
-     animation:animateleft 1.3s 
+     animation:animateleft 0.4s 
 }
  @keyframes animateleft{
      from{
@@ -1352,7 +1354,7 @@
 /* Set the width of the sidebar to 120px */
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
  #main {
-     margin-left: 120px;
+     margin-left: 0px;
      margin-top: 0px;
 }
 /* Remove margins from "page content" on small screens */

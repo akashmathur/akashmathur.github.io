@@ -1,227 +1,706 @@
- .contact-info {
-     text-align: center;
+
+
+.contact-info {
+	text-align: center;
 }
- .facebook-color {
-     color: #4167B2;
+
+.facebook-color {
+	color: #4167B2;
 }
- .linkedIn-color {
-     color: #0375B4;
+
+.linkedIn-color {
+	color: #0375B4;
 }
- .instagram-color {
-     color: #B22AB0;
+
+.instagram-color {
+	color: #B22AB0;
 }
- .google-color {
-     color: #DE4C3F;
+
+.google-color {
+	color: #DE4C3F;
 }
 
 .github-color {
-    color: #000000;
+	color: #000000;
 }
 
- .mail-color, .hr-color {
-     color: #495867;
-     border-color: #AEB7B3;
-}
- .nav-color{
-     color:#fff!important;
-     background-color:#222222!important 
-}
- .nav-hover-color:hover{
-     color:#222222!important;
-     background-color:#fff!important 
-}
- .mobile-hover-link:hover{
-     color:#222222!important;
-     background-color:#fff!important 
-}
- .skills-spacing {
-     margin-top:8px!important;
-     margin-bottom:8px!important 
-}
- .skills-div-spacing {
-     margin-bottom:35px!important 
-}
- #webdesign-section {
-     margin-bottom:0px!important 
-}
- .skillColor1{
-     color:#fff!important;
-     background-color:#B9063D!important 
-}
- .skillColor2{
-     color:#fff!important;
-     background-color:#C73763!important 
-}
- .skillColor3{
-     color:#fff!important;
-     background-color:#D5698A!important 
-}
- .skillColor4{
-     color:#fff!important;
-     background-color:#E39BB1!important 
-}
- .skillColor5{
-     color:#fff!important;
-     background-color:#EAB4C4!important 
-}
- .backgroundGrey{
-     color:#fff!important;
-     background-color:#2A2A2A!important 
-}
- .bold {
-     font-weight: bold;
-}
- .margin-0 {
-     margin-top:0px!important;
-     margin-bottom:0px!important;
-}
- .margin-2 {
-     margin-top:2px!important;
-     margin-bottom:2px!important;
-}
- .margin-3 {
-     margin-top:3px!important;
-     margin-bottom:3px!important;
-}
- .margin-4 {
-     margin-top:4px!important;
-     margin-bottom:4px!important;
-}
- .margin-4-bottom {
-     margin-bottom:4px!important;
-}
- .margin-8 {
-     margin-top:8px!important;
-     margin-bottom:8px!important;
-}
- .margin-10 {
-     margin-top:10px!important;
-     margin-bottom:10px!important;
-}
- .margin-10-top {
-     margin-top:10px!important;
-}
- .margin-16 {
-     margin-top:16px!important;
-     margin-bottom:16px!important;
-}
- .margin-16-bottom {
-     margin-bottom:16px!important;
-     margin-top:0px!important;
-}
- .margin-32 {
-     margin-top:32px!important;
-     margin-bottom:32px!important;
+.mail-color,
+.hr-color {
+	color: #495867;
+	border-color: #AEB7B3;
 }
 
- .margin-24-bottom {
-     margin-top:0px!important;
-     margin-bottom:24px!important;
+min-height: 100%;
+background-position: center;
+background-size: cover;
+.nav-color {
+	color: #222222!important;
+	background-color: #fff!important
 }
 
- .margin-36-bottom {
-     margin-bottom:36px!important;
+.nav-hover-color:hover {
+	color: gray!important;
+	background-color: #fff!important
 }
- .margin-4-top {
-     margin-top:4px!important;
+
+.mobile-hover-link:hover {
+	color: #222222!important;
+	background-color: #fff!important
 }
- .padding-0 {
-     padding-top:0px!important;
-     padding-bottom:0px!important;
+
+.skills-spacing {
+	margin-top: 8px!important;
+	margin-bottom: 8px!important
 }
- .padding-4 {
-     padding-top:4px!important;
-     padding-bottom:4px!important;
+
+.skills-div-spacing {
+	margin-bottom: 35px!important
 }
- .padding-8 {
-     padding-top:8px!important;
-     padding-bottom:8px!important;
+
+#webdesign-section {
+	margin-bottom: 0px!important
 }
- .padding-16 {
-     padding-top:16px!important;
-     padding-bottom:16px!important;
+
+.headerIconScale {
+	transition: 0.3s ease;
+	color: #ccc!important;
 }
- .padding-16-top {
-     padding-top:16px!important;
+
+.headerIconScale:hover {
+	transform: translateY(-5px) scale(1.2);
+	color: #C73763!important;
+	background-color: #fff!important
 }
- .padding-16-all {
-     padding-top:12px!important;
-     padding-right:18px!important;
-     padding-bottom:12px!important;
-     padding-left:18px!important;
+
+.headerIconSpacing {
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
 }
- .padding-20 {
-     padding-top:20px!important;
-     padding-bottom:20px!important;
+
+.chevronColor {
+	color: #C73763!important;
+	background-color: #fff!important
 }
- .padding-20-top {
-     padding-top:20px!important;
+
+.skillColor1 {
+	color: #fff!important;
+	background-color: #B9063D!important
 }
- .padding-24 {
-     padding-top:24px!important;
-     padding-bottom:24px!important;
+
+.skillColor2 {
+	color: #fff!important;
+	background-color: #C73763!important
 }
- .padding-24-top {
-     padding-top:24px!important;
+
+.skillColor3 {
+	color: #fff!important;
+	background-color: #D5698A!important
 }
- .padding-32 {
-     padding-top:32px!important;
-     padding-bottom:32px!important;
+
+.skillColor4 {
+	color: #fff!important;
+	background-color: #E39BB1!important
 }
- .padding-32-top {
-     padding-top:32px!important;
+
+.skillColor5 {
+	color: #fff!important;
+	background-color: #EAB4C4!important
 }
- .padding-portfolio {
-     padding-right:0px!important;
-     padding-left: 0px!important;
+
+.backgroundGrey {
+	color: #fff!important;
+	background-color: #2A2A2A!important
 }
- #resume {
-     -webkit-animation-iteration-count: 2;
+
+.bold {
+	font-weight: bold;
 }
- .w3-modal{
-     z-index:3;
-     display:none;
-     padding-top:8%;
-     position:fixed;
-     left:0;
-     top:0;
-     width:100%;
-     height:100%;
-     overflow:auto;
-     background-color:#495867;
-     background-color:rgba(34,34,34,1.0) 
+
+.margin-0 {
+	margin-top: 0px!important;
+	margin-bottom: 0px!important;
 }
- .paragraph-space {
-     line-height: 1.6;
+
+.margin-2 {
+	margin-top: 2px!important;
+	margin-bottom: 2px!important;
 }
- @media (max-width: 1100px) {
-     .maps {
-         display: block;
-         width:100%!important;
-         padding: 0px;
-         margin-top: 20px;
-    }
-     .mobile-custom-font {
-         font-size: 11px;
-    }
+
+.margin-3 {
+	margin-top: 3px!important;
+	margin-bottom: 3px!important;
 }
- @media (max-width: 600px) {
-     .mobile-custom {
-         display: block;
-         width:100%!important;
-         margin-top: 40px;
-    }
-     .mobile-custom-font {
-         font-size: 11px;
-    }
-     .mobile-custom-font-2 {
-         font-size: 35px!important;
-    }
+
+.margin-4 {
+	margin-top: 4px!important;
+	margin-bottom: 4px!important;
 }
- .font-13-half{
-     font-size:13.5px!important 
+
+.margin-4-bottom {
+	margin-bottom: 4px!important;
 }
- .font-16{
-     font-size:16px!important 
+
+.margin-8 {
+	margin-top: 8px!important;
+	margin-bottom: 8px!important;
 }
- 
+
+.margin-10 {
+	margin-top: 10px!important;
+	margin-bottom: 10px!important;
+}
+
+.margin-10-top {
+	margin-top: 10px!important;
+}
+
+.margin-16 {
+	margin-top: 16px!important;
+	margin-bottom: 16px!important;
+}
+
+.margin-16-bottom {
+	margin-bottom: 16px!important;
+	margin-top: 0px!important;
+}
+
+.margin-32 {
+	margin-top: 32px!important;
+	margin-bottom: 32px!important;
+}
+
+.margin-24-bottom {
+	margin-top: 0px!important;
+	margin-bottom: 24px!important;
+}
+
+.margin-36-bottom {
+	margin-bottom: 36px!important;
+}
+
+.margin-4-top {
+	margin-top: 4px!important;
+}
+
+.padding-0 {
+	padding-top: 0px!important;
+	padding-bottom: 0px!important;
+}
+
+.padding-4 {
+	padding-top: 4px!important;
+	padding-bottom: 4px!important;
+}
+
+.padding-8 {
+	padding-top: 8px!important;
+	padding-bottom: 8px!important;
+}
+
+.padding-16 {
+	padding-top: 16px!important;
+	padding-bottom: 16px!important;
+}
+
+.padding-16-top {
+	padding-top: 16px!important;
+}
+
+.padding-16-all {
+	padding-top: 12px!important;
+	padding-right: 18px!important;
+	padding-bottom: 12px!important;
+	padding-left: 18px!important;
+}
+
+.padding-20 {
+	padding-top: 20px!important;
+	padding-bottom: 20px!important;
+}
+
+.padding-20-top {
+	padding-top: 20px!important;
+}
+
+.padding-32-left {
+	padding-left: 32px!important;
+}
+
+.padding-24 {
+	padding-top: 24px!important;
+	padding-bottom: 24px!important;
+}
+
+.padding-24-top {
+	padding-top: 24px!important;
+}
+
+.padding-32 {
+	padding-top: 32px!important;
+	padding-bottom: 32px!important;
+}
+
+.padding-32-top {
+	padding-top: 32px!important;
+}
+
+.padding-portfolio {
+	padding-right: 0px!important;
+	padding-left: 0px!important;
+}
+
+.chevron-margin {
+	margin-top: 100px!important;
+}
+
+#resume {
+	-webkit-animation-iteration-count: 2;
+}
+
+.w3-modal {
+	z-index: 3;
+	display: none;
+	padding-top: 8%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #495867;
+	background-color: rgba(34, 34, 34, 1.0)
+}
+
+.paragraph-space {
+	line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+	.maps {
+		display: block;
+		width: 100%!important;
+		padding: 0px;
+		margin-top: 20px;
+	}
+	.mobile-custom-font {
+		font-size: 11px;
+	}
+}
+
+@media (max-width: 600px) {
+	.mobile-custom {
+		display: block;
+		width: 100%!important;
+		margin-top: 40px;
+	}
+	.mobile-custom-font {
+		font-size: 11px;
+	}
+	.mobile-custom-font-2 {
+		font-size: 35px!important;
+	}
+}
+
+.font-13-half {
+	font-size: 13.5px!important
+}
+
+.font-16 {
+	font-size: 16px!important
+}
+
+.hero__scroll {
+	position: absolute;
+	top: 20px;
+	bottom: 60px;
+	width: 200px;
+	margin: auto;
+	display: block;
+	cursor: pointer;
+	padding-bottom: 40px;
+	left: 0;
+	right: 0;
+	text-transform: uppercase;
+}
+
+.bounce-in-top {
+	-webkit-animation: bounce-in-top 1.1s 2s both;
+	animation: bounce-in-top 1.1s 2s both;
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-6-7 10:47:48
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+
+/**
+ * ----------------------------------------
+ * animation bounce-in-top
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes bounce-in-top {
+	0% {
+		-webkit-transform: translateY(-500px);
+		transform: translateY(-500px);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+	38% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+		opacity: 1;
+	}
+	55% {
+		-webkit-transform: translateY(-65px);
+		transform: translateY(-65px);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+	72% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	81% {
+		-webkit-transform: translateY(-28px);
+		transform: translateY(-28px);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+	90% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	95% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+}
+
+@keyframes bounce-in-top {
+	0% {
+		-webkit-transform: translateY(-500px);
+		transform: translateY(-500px);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+	38% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+		opacity: 1;
+	}
+	55% {
+		-webkit-transform: translateY(-65px);
+		transform: translateY(-65px);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+	72% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	81% {
+		-webkit-transform: translateY(-28px);
+		transform: translateY(-28px);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+	90% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	95% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+}
+
+.slide-out-left {
+	-webkit-animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-6-7 10:50:34
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+
+/**
+ * ----------------------------------------
+ * animation slide-out-left
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes slide-out-left {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translateX(-1000px);
+		transform: translateX(-1000px);
+		opacity: 0;
+	}
+}
+
+@keyframes slide-out-left {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translateX(-1000px);
+		transform: translateX(-1000px);
+		opacity: 0;
+	}
+}
+
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-6-9 19:24:28
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes slide-in-left {
+	0% {
+		-webkit-transform: translateX(-1000px);
+		transform: translateX(-1000px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slide-in-left {
+	0% {
+		-webkit-transform: translateX(-1000px);
+		transform: translateX(-1000px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.slide-in-left-delay {
+	-webkit-animation: slide-in-left 0.8s both;
+	animation: slide-in-left 0.8s both;
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-6-9 19:50:19
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes slide-in-left {
+	0% {
+		-webkit-transform: translateX(-1000px);
+		transform: translateX(-1000px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slide-in-left {
+	0% {
+		-webkit-transform: translateX(-1000px);
+		transform: translateX(-1000px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.fade-in {
+	-webkit-animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-6-7 14:23:31
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.shake-vertical {
+	-webkit-animation: shake-vertical 5s ease-out infinite both;
+	animation: shake-vertical 5s ease-out infinite both;
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-6-7 14:49:0
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+
+/**
+ * ----------------------------------------
+ * animation shake-vertical
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes shake-vertical {
+	0%,
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	10%,
+	30%,
+	50%,
+	70% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+	20%,
+	40%,
+	60% {
+		-webkit-transform: translateY(8px);
+		transform: translateY(8px);
+	}
+	80% {
+		-webkit-transform: translateY(6.4px);
+		transform: translateY(6.4px);
+	}
+	90% {
+		-webkit-transform: translateY(-6.4px);
+		transform: translateY(-6.4px);
+	}
+}
+
+@keyframes shake-vertical {
+	0%,
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	10%,
+	30%,
+	50%,
+	70% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+	20%,
+	40%,
+	60% {
+		-webkit-transform: translateY(8px);
+		transform: translateY(8px);
+	}
+	80% {
+		-webkit-transform: translateY(6.4px);
+		transform: translateY(6.4px);
+	}
+	90% {
+		-webkit-transform: translateY(-6.4px);
+		transform: translateY(-6.4px);
+	}
+}
+
+body,
+html {
+	height: 100%;
+}
+
+.bgimg {
+	min-height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
