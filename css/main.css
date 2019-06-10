@@ -270,6 +270,8 @@ background-size: cover;
 	background-color: rgba(34, 34, 34, 1.0)
 }
 
+
+
 .paragraph-space {
 	line-height: 1.6;
 }
@@ -304,6 +306,11 @@ background-size: cover;
 	}
 	.mobile-custom-font-2 {
 		font-size: 35px!important;
+	}
+    
+    .mobile-content-display {
+		max-width: 100%;
+		margin: auto
 	}
 }
 
