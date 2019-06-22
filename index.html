@@ -1,5 +1,3 @@
-
-
 <!--
    Changes:
        Improved content-display: content doesn't cover hamburger menu on widescreen mobile display or desktops
@@ -13,6 +11,7 @@
    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
    <link rel="shortcut icon" href="favicon.ico">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" type="text/css" href="css/styles.css">
    <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -35,22 +34,7 @@
          </div>
          <nav class="slide-in-left w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-card-4 extendNav" role="nav" id="mainNav" style="display:none;">
             <div class="w3-display-middle">
-               <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large nav-hover-color nav-color homeButton">
-                  <i class="fa fa-home w3-xxlarge"></i>
-                  <p>HOME</p>
-                  </a>
-                  <a href="#" class="w3-bar-item w3-button w3-padding-large nav-hover-color nav-color aboutButton">
-                  <i class="fa fa-user w3-xxlarge"></i>
-                  <p>ABOUT</p>
-                  </a>
-                  <a href="#" class="w3-bar-item w3-button w3-padding-large nav-hover-color nav-color portfolioButton">
-                  <i class="fa fa-folder-open w3-xxlarge"></i>
-                  <p>PORTFOLIO</p>
-                  </a>
-                  <a href="#" class="w3-bar-item w3-button w3-padding-large nav-hover-color nav-color contactButton">
-                  <i class="fa fa-envelope w3-xxlarge"></i>
-                  <p>CONTACT</p>
-                  </a> -->
+               
                <div class="slide-in-left-delay" id="navOptions">
                   <a href="#" class="w3-bar-item w3-button nav-hover-color nav-color homeButton intro-para-link">
                      <h4 class="w3-text-black w3-bar-item w3-button nav-hover-color nav-color">HOME</h4>
@@ -180,24 +164,50 @@
                <hr style="width:200px; margin-top: 1%;" class="w3-opacity hr-color">
                <h3 class="w3-padding-bottom w3-text-black">Experience</h3>
             </div>
-            <!--             Experience Line One-->
-            <div class="w3-row-padding margin-36-bottom">
-               <!-- Checkout 51 Display Info-->
-               <div class="w3-half w3-center aos-item" data-aos="fade-up">
-                  <a href="checkout51.html" style="text-decoration: none;" class="pic-c51-hover"><img src="images/c51-final.jpg" id="checkout51-link" style="width: 100%;" class="w3-hover-opacity w3-card-4"></a>
-                  <div class="w3-container" id = "checkout51-info">
-                     <p class="w3-text-black w3-large margin-0"><a href="checkout51.html" style="text-decoration: none; width: 100%;" class="w3-hover-opacity para-c51-hover"><i class="fa fa-link w3-medium w3-wide"></i>Checkout 51</a></p>
-                     <p class="w3-text-black w3-large margin-0">Software Engineering Intern</p>
-                     <p class="w3-text-black font-16 margin-3">May 2017 - August 2017</p>
+            <div class="aos-item" data-aos="fade-up">
+               <div class="flex-container w3-text-black">
+                  <!-- SOTI Display Info-->
+                  <div class="card-top aos-item" data-aos="fade-up">
+                     <a href="SOTI.html" style="text-decoration: none;">
+                        <div class="card-pic" id="soti-img"></div>
+                        <div class="card-text">
+                           <p class="jobTitle">Product Manager Intern</p>
+                           <div class="card-chip w3-hide-small">Product Management</div>
+                           <div class="card-chip w3-hide-small">MVP</div>
+                           <div class="card-chip w3-hide-small">POC</div>
+                           <p class="jobDetails">SOTI Inc.</p>
+                           <p class="jobDetails">May 2019 - Present</p>
+                        </div>
+                     </a>
                   </div>
-               </div>
-               <!-- RainGrid Display Info-->
-               <div class="w3-half w3-center mobile-custom aos-item" data-aos="fade-up">
-                  <a href="raingrid.html" style="text-decoration: none;" class="pic-raingrid-hover"><img src="images/raingrid-final.jpg" id="raingrid-link" style="width: 100%;" class="w3-hover-opacity w3-card-4"></a>
-                  <div class="w3-container" id = "raingrid-info">
-                     <p class="w3-text-black w3-large margin-0"><a href="raingrid.html" style="text-decoration: none;" class="w3-hover-opacity para-raingrid-hover"><i class="fa fa-link w3-medium w3-wide"></i>RainGrid</a></p>
-                     <p class="w3-text-black w3-large margin-0">R&amp;D Engineering</p>
-                     <p class="w3-text-black font-16 margin-3">January 2016 - April 2016</p>
+                  <!-- Checkout 51 Display Info-->
+                  <div class="card-top aos-item" data-aos="fade-up">
+                     <a href="checkout51.html" style="text-decoration: none;">
+                        <div class="card-pic" id="checkout51-img"></div>
+                        <div class="card-text">
+                           <p class="jobTitle">Software Engineering Intern</p>
+                           <div class="card-chip w3-hide-small">PHP</div>
+                           <div class="card-chip w3-hide-small">HTML5</div>
+                           <div class="card-chip w3-hide-small">CSS3</div>
+                           <div class="card-chip w3-hide-small">JavaScript</div>
+                           <p class="jobDetails">Checkout 51</p>
+                           <p class="jobDetails">May 2017 - August 2017</p>
+                        </div>
+                     </a>
+                  </div>
+                  <!-- RainGrid Display Info-->
+                  <div class="card-top aos-item" data-aos="fade-up">
+                     <a href="raingrid.html" style="text-decoration: none;">
+                        <div class="card-pic" id="raingrid-img"></div>
+                        <div class="card-text">
+                           <p class="jobTitle">R&amp;D Engineering</p>
+                           <div class="card-chip w3-hide-small">Design Thinking</div>
+                           <div class="card-chip w3-hide-small">MVP</div>
+                           <div class="card-chip w3-hide-small">POC</div>
+                           <p class="jobDetails">RainGrid</p>
+                           <p class="jobDetails">January 2016 - April 2016</p>
+                        </div>
+                     </a>
                   </div>
                </div>
             </div>
@@ -329,4 +339,3 @@
       </script>
    </body>
 </html>
-

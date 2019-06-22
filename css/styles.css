@@ -587,6 +587,9 @@
  .w3-show-inline-block{
      display:inline-block!important 
 }
+ 
+
+
  @media (max-width:600px){
      .w3-modal-content{
          margin:0 10px;
@@ -611,6 +614,38 @@
      .w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{
          width:100% 
     }
+     
+     .card-top {
+	   width:320px!important;
+}
+     
+      .card-pic {
+	   height: 300px!important
+    }
+
+     
+}
+
+@media (max-width:350px){
+     
+     .card-top {
+	   width:220px!important;
+}
+     
+      .card-pic {
+	   height: 200px!important
+    }
+    
+    .jobTitle {
+        font-size: 16px!important;
+
+}
+    .jobDetails {
+        font-size: 15px!important;
+
+}
+
+     
 }
 
 
@@ -621,6 +656,7 @@
      .w3-modal{
          padding-top:50px 
     }
+
 }
  @media (min-width:993px){
      .w3-modal-content{
