@@ -1,8 +1,10 @@
+
+
 .card-top {
 	display: inline-block;
 	width: 460px;
 	border-radius: 16px;
-    margin: 5px;
+	margin: 5px;
 	-webkit-transition: background-color 0.3s ease-out;
 	-moz-transition: background-color 0.3s ease-out;
 	-o-transition: background-color 0.3s ease-out;
@@ -131,8 +133,6 @@
 	background-size: 100%;
 	background-position: center;
 }
-
-
 
 .contact-info {
 	text-align: center;
@@ -845,3 +845,4 @@ html {
 	background-position: center;
 	background-size: cover;
 }
+
