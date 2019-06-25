@@ -74,8 +74,8 @@
 	/*display: inline-block;*/
 	padding-left: 18px;
 	padding-right: 18px;
-	padding-top: 3px;
-	padding-bottom: 3px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	margin-right: 9px;
 	font-size: 14.5px;
 	font-weight: 200;
@@ -103,6 +103,36 @@
 	background-size: 100%;
 	background-position: center;
 }
+
+#gis-mapping-img {
+	background-image: url("../images/GIS-display.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+#assembly-img {
+	background-image: url("../images/lego-display.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+#arduino-img {
+	background-image: url("../images/arduino-display.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+#websiteProj-img {
+	background-image: url("../images/website-display.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+
 
 .contact-info {
 	text-align: center;
