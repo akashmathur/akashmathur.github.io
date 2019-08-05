@@ -202,7 +202,7 @@ background-size: cover;
 
 .headerIconScale:hover {
 	transform: translateY(-5px) scale(1.2);
-	color: #C73763!important;
+	color: #00b0f0!important;
 	background-color: #fff!important
 }
 
@@ -211,28 +211,28 @@ background-size: cover;
 }
 
 .chevronColor {
-	color: #C73763!important;
+	color: #00b0f0!important;
 	background-color: #fff!important
 }
 
 .skillColor1 {
 	color: #fff!important;
-	background-color: #B9063D!important
+	background-color: #00b0f0!important
 }
 
 .skillColor2 {
 	color: #fff!important;
-	background-color: #C73763!important
+	background-color: #4AC8F6!important
 }
 
 .skillColor3 {
 	color: #fff!important;
-	background-color: #D5698A!important
+	background-color: #6FD5F9!important
 }
 
 .skillColor4 {
 	color: #fff!important;
-	background-color: #E39BB1!important
+	background-color: #A6E7FD!important
 }
 
 .skillColor5 {
