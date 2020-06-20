@@ -1,8 +1,6 @@
-
-
 <!--
    Changes:
-       Improved content-display: content doesn't cover hamburger menu on widescreen mobile display or desktops
+       - Moved Hheader sectoin to new div, removed it from na div
    -->
 <!--Main Index Page-->
 <!DOCTYPE html>
@@ -61,31 +59,31 @@
                <a href="#" class="w3-bar-item w3-button contactButton mobile-hover-link" style="width:25% !important">CONTACT</a>
             </div>
          </div>
-         <!-- Header/Home -->
-         <header class="w3-container w3-center w3-white padding-large" id="home">
-            <div class="w3-display-middle">
-               <h1 class="w3-jumbo fade-in margin-0">Hi, I'm Akash!</h1>
-               <h2 class="w3-large fade-in margin-0">Engineer.</h2>
-               <h2 class="w3-large fade-in margin-0">Designer.</h2>
-               <h2 class="w3-large fade-in margin-16-bottom">Aspiring Product Manager.</h2>
-               <!--                <img src="images/akashpic1.png" alt="boy" class="w3-image fade-in" width="400"> -->
-               <div class ="chevron-margin">
-                  <a href="#" class="aboutButton "><i class="fa fa-chevron-down w3-xlarge shake-vertical chevronColor"></i></a>
-               </div>
-            </div>
-            <!--
-               <div class ="w3-display-bottommiddle chevron-margin">
-                  <a href="#" class="aboutButton "><i class="fa fa-chevron-down w3-xlarge shake-vertical chevronColor"></i></a>
-               </div>
-               -->
-            <div class="w3-display-topright w3-hide-small bounce-in-top headerIconSpacing">
-               <a href="https://www.linkedin.com/in/akash-mathur" target="_blank" title="LinkedIn" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-linkedin fa-fw  w3-xxlarge w3-margin-right headerIconScale"></i></a>
-               <a href="mailto:akash.mathur@mail.utoronto.ca" title="Email" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right headerIconScale"></i></a>
-               <a href="http://instagram.com/_akashm" target="_blank" title="Instagram" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-instagram  fa-fw  w3-xxlarge w3-margin-right headerIconScale" ></i></a>
-               <a href="https://www.facebook.com/akashmathur97" target="_blank" title="Facebook" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-facebook fa-fw w3-xxlarge w3-margin-right headerIconScale" ></i></a>
-            </div>
-         </header>
       </div>
+      <!-- Header/Home -->
+      <header class="w3-container w3-center w3-white padding-large" id="home">
+         <div class="w3-display-middle">
+            <h1 class="w3-jumbo fade-in margin-0">Hi, I'm Akash!</h1>
+            <h2 class="w3-large fade-in margin-0">Engineer.</h2>
+            <h2 class="w3-large fade-in margin-0">Designer.</h2>
+            <h2 class="w3-large fade-in margin-16-bottom">Aspiring Product Manager.</h2>
+            <!--                <img src="images/akashpic1.png" alt="boy" class="w3-image fade-in" width="400"> -->
+            <div class ="chevron-margin">
+               <a href="#" class="aboutButton "><i class="fa fa-chevron-down w3-xlarge shake-vertical chevronColor"></i></a>
+            </div>
+         </div>
+         <!--
+            <div class ="w3-display-bottommiddle chevron-margin">
+               <a href="#" class="aboutButton "><i class="fa fa-chevron-down w3-xlarge shake-vertical chevronColor"></i></a>
+            </div>
+            -->
+         <div class="w3-display-topright w3-hide-small bounce-in-top headerIconSpacing">
+            <a href="https://www.linkedin.com/in/akash-mathur" target="_blank" title="LinkedIn" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-linkedin fa-fw  w3-xxlarge w3-margin-right headerIconScale"></i></a>
+            <a href="mailto:akash.mathur@mail.utoronto.ca" title="Email" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right headerIconScale"></i></a>
+            <a href="http://instagram.com/_akashm" target="_blank" title="Instagram" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-instagram  fa-fw  w3-xxlarge w3-margin-right headerIconScale" ></i></a>
+            <a href="https://www.facebook.com/akashmathur97" target="_blank" title="Facebook" style="text-decoration: none;" class="mobile-hover-link"><i class="fa fa-facebook fa-fw w3-xxlarge w3-margin-right headerIconScale" ></i></a>
+         </div>
+      </header>
       <!-- Page Content -->
       <div class="w3-padding-large" id="main" role="main">
          <!-- About Section -->
@@ -93,19 +91,13 @@
             <div class="aos-item" data-aos="fade-up">
                <h2 class="w3-text-black"><i class="fa fa-user w3-xlarge w3-wide"></i>About Akash</h2>
                <hr style="width:200px" class="w3-opacity hr-color">
-               
             </div>
             <div class="aos-item" data-aos="fade-up">
                <h3 class="w3-margin-top w3-text-black">Skills</h3>
             </div>
-            
-
-
-<div class="skills-div-spacing aos-item" data-aos="fade-up">
+            <div class="skills-div-spacing aos-item" data-aos="fade-up">
                <h4><i class="fa fa-shopping-bag w3-wide"></i>Product Management</h4>
-               
                <div class="aos-item" data-aos="fade-up" id="low-level" style="margin-bottom: 17px">
-                  
                   <div class="w3-light-grey">
                      <div class="w3-container w3-padding-small skills-spacing skillColor1 w3-center" style="height:28px;width:97%;margin-bottom: 0;">User Research & User Stories</div>
                   </div>
@@ -120,9 +112,6 @@
                   </div>
                </div>
             </div>
-
-
-
             <div class="skills-div-spacing aos-item" data-aos="fade-up" id="programming-section">
                <h4><i class="fa fa-code w3-wide"></i>Programming</h4>
                <!-- high level -->
@@ -169,11 +158,6 @@
                <div class="w3-light-grey">
                   <div class="w3-container w3-padding-small skills-spacing skillColor4 w3-center" style="height:28px;width:70%">jQuery</div>
                </div>
-               <!--
-                  <div class="w3-light-grey">
-                     <div class="w3-container w3-padding-small skills-spacing skillColor5 w3-center" style="height:28px;width:50%">AJAX</div>
-                  </div>
-                  -->
             </div>
             <br>
             <!-- End About Section -->
@@ -182,27 +166,37 @@
          <div class="w3-content better-content-display mobile-content-display w3-justify w3-text-grey padding-24-top" id="portfolio">
             <div class="aos-item" data-aos="fade-up">
                <h2 class="w3-text-black" style="display: inline-block"><i class="fa fa-folder-open w3-xlarge w3-wide"></i>Portfolio</h2>
-               <!--
-                  <button class="w3-button w3-light-grey w3-padding-large w3-right w3-mobile" style="margin-top: 1%;" id = "resume">
-                  <a href="files/resume.pdf" target="_blank" title="Test Akash Mathur Resume" download="Test Akash Mathur Resume" style="text-decoration: none;"><i class="fa fa-download w3-xlarge"></i> Download Resume </a>
-                  </button>
-                  -->
                <hr style="width:200px; margin-top: 1%;" class="w3-opacity hr-color">
                <h3 class="w3-padding-bottom w3-text-black">Experience</h3>
             </div>
             <div class="aos-item" data-aos="fade-up">
                <div class="flex-container w3-text-black">
-                  <!-- SOTI Display Info-->
+                  <!-- BlackBerry Display Info-->
+                  <div class="card-top aos-item" data-aos="fade-up">
+                     <a href="BB.html" style="text-decoration: none;">
+                        <div class="card-pic" id="blacberry-img"></div>
+                        <div class="card-text">
+                           <p class="jobTitle">Product Management Intern</p>
+                           <div class="card-chip w3-hide-small">Product Management</div>
+                           <div class="card-chip w3-hide-small">Product Execution</div>
+                           <div class="card-chip w3-hide-small">GTM Strategy</div>
+                           <p class="jobDetails">BlackBerry</p>
+                           <p class="jobDetails">June 2020 - Present</p>
+                        </div>
+                     </a>
+                  </div>
+                   <!-- SOTI Display Info-->
                   <div class="card-top aos-item" data-aos="fade-up">
                      <a href="SOTI.html" style="text-decoration: none;">
                         <div class="card-pic" id="soti-img"></div>
                         <div class="card-text">
-                           <p class="jobTitle">Product Manager Intern</p>
+                           <p class="jobTitle">Product Management Intern</p>
                            <div class="card-chip w3-hide-small">Product Management</div>
                            <div class="card-chip w3-hide-small">MVP</div>
+                           <div class="card-chip w3-hide-small">Product Design</div>
                            <div class="card-chip w3-hide-small">POC</div>
                            <p class="jobDetails">SOTI Inc.</p>
-                           <p class="jobDetails">May 2019 - Present</p>
+                           <p class="jobDetails">May 2019 - June 2020</p>
                         </div>
                      </a>
                   </div>
@@ -329,7 +323,7 @@
             <!-- End Contact Section -->
          </div>
          <footer class="w3-content better-content-display mobile-content-display   padding-8 w3-text-grey w3-xlarge w3-center" >
-            <p class="w3-medium" id="footer-content">Akash Mathur 2019</p>
+            <p class="w3-medium" id="footer-content">Akash Mathur 2020</p>
          </footer>
          <!-- END PAGE CONTENT -->
       </div>
@@ -380,4 +374,3 @@
       </script>
    </body>
 </html>
-

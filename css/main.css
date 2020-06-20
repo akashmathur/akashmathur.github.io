@@ -85,8 +85,15 @@
 	-webkit-font-smoothing: antialiased;
 }
 
+#blacberry-img {
+	background-image: url("../images/bb.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
 #checkout51-img {
-	background-image: url("../images/c51-final-1.jpg");
+	background-image: url("../images/c51-final-1.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center;
