@@ -172,14 +172,14 @@ $(window).scroll(function() {
 
 new TypeIt("#whoIAm", {
   speed: 85,
-  deleteSpeed: 70,
+  deleteSpeed: 80,
   waitUntilVisible: true,
 })
-.type("Engineer.", {delay: 300})
+.type("Engineer.", {delay: 1200})
 .delete(9)
-.type('Designer.', {delay: 300})
+.type('Designer.', {delay: 1200})
 .delete(9)
-.type("Product Manager", {delay: 300})
+.type("Product Manager", {delay: 1200})
 .move(-15)
 .type('Aspiring ')
 .move('END')
