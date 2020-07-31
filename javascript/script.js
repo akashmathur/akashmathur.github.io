@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+
     //Check if the device supports touch events
     var isMobile = false;
 
@@ -169,3 +169,25 @@ $(window).scroll(function() {
 
     }
 }).scroll();
+
+new TypeIt("#whoIAm", {
+  speed: 85,
+  deleteSpeed: 70,
+  waitUntilVisible: true,
+})
+.type("Engineer.", {delay: 300})
+.delete(9)
+.type('Designer.', {delay: 300})
+.delete(9)
+.type("Product Manager", {delay: 300})
+.move(-15)
+.type('Aspiring ')
+.move('END')
+.type('.')
+.move('END')
+.go();
+
+
+
+
+
