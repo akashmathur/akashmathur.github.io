@@ -2014,8 +2014,6 @@ a {
 	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
 	border-radius: 100px;
 	transition: .3s;
-	margin-bottom: 12px!important;
-	margin-right: 12px!important
 }
 
 .submit-resource-btn:hover {
@@ -2030,16 +2028,16 @@ a {
 
 .banner-header {
 	min-height: 100px;
-	background-color: #ff357b;
-	padding-top: 40px!important;
-	padding-bottom: 40px!important;
-	clip-path: polygon(0 0, 100% 25%, 100% 78%, 0% 100%);
+	background-color: #fff;
+	padding-top: 20px!important;
+	padding-bottom: 20px!important;
+	/*clip-path: polygon(0 0, 100% 25%, 100% 78%, 0% 100%);*/
 }
 
 .banner-header p {
 	text-align: center!important;
-	font-size: 30px;
-	color: #fff;
+	font-size: 40px;
+	color: #ff357b;
 }
 
 /*.w3-padding-40 {
@@ -2066,16 +2064,16 @@ a {
 
 	.banner-header {
 		min-height: 100px;
-		background-color: #ff357b;
+		background-color: #fff;
 		padding-top: 20px!important;
 		padding-bottom: 20px!important;
-		clip-path: polygon(0 0, 100% 25%, 100% 78%, 0% 100%);
+		/*clip-path: polygon(0 0, 100% 25%, 100% 78%, 0% 100%);*/
 	}
 
 	.banner-header p {
 		text-align: center!important;
-		font-size: 22px;
-		color: #fff;
+		font-size: 32px;
+		color: #ff357b;
 	}
 
 	.w3-custom-button {
