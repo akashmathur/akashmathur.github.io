@@ -19,31 +19,31 @@ $(window).resize(function () {
 $("#all-btn").click(function () {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
-    }, 500);
+    }, 300);
 });
 
 $("#lectures-btn").click(function () {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
-    }, 500);
+    }, 300);
 });
 
 $("#notes-btn").click(function () {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
-    }, 500);
+    }, 300);
 });
 
 $("#tm-btn").click(function () {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
-    }, 500);
+    }, 300);
 });
 
 $("#miscellaneous-btn").click(function () {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
-    }, 500);
+    }, 300);
 });
 
 
