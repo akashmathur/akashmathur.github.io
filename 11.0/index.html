@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+   <title>Students @ Home</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles/styles.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+      html {
+      position: relative;
+      min-height: 100%;
+      line-height: 1.8;
+      }
+      .w3-bar .w3-button {
+      padding: 16px;
+      }
+   </style>
+   <body class="noSelect">
+      <!-- Navbar (sit on top) -->
+      <div class="sticky-nav">
+         <div class="w3-bar w3-white" id="myNavbar">
+            <div class="w3-auto-custom">
+               <div class="flex items-center justify-with-space">
+                  <div>
+                     <a class="web-title margin-12-bottom" href="#" style="text-decoration: none"><span>Students @ Home</span></a>
+                  </div>
+                  <nav style="margin-left: 15px">
+                     <ul class="flex">
+                        <li class="w3-custom-button active-btn" id="all-btn" onclick="showAll()">All</li>
+                        <li class="w3-custom-button" id="lectures-btn" onclick="showLecture()">Lecture</li>
+                        <li class="w3-custom-button" id="notes-btn" onclick="showNotes()">Notes</li>
+                        <li class="w3-custom-button" id="tm-btn" onclick="showTimeManagement()">Time Management</li>
+                        <li class="w3-custom-button" id="miscellaneous-btn" onclick="showMiscellaneous()">Miscellaneous</li>
+                        <li class="submit-resource-btn"">Submit a Resource</li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="banner-header w3-padding-40">
+         <div class="w3-auto-custom">
+            <div class="w3-padding-24">
+               <p id="banner-text" style="margin: 0.5em"></p>
+            </div>
+         </div>
+      </div>
+      <!-- Team Section -->
+      <div class="w3-container" style="padding:16px" id="team">
+         <div class="w3-row-padding w3-auto-custom">
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>Evernote</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>Notes</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>Notes</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>Notes</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>Notes</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show lectures">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>lectures</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show lectures">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>lectures</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show lectures">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>lectures</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show tm">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>tm</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show tm">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>tm</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show tm">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>tm</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show tm">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>tm</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show miscellaneous">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>miscellaneous</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show miscellaneous">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>miscellaneous</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show miscellaneous">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>miscellaneous</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col xl3 l4 m6 w3-margin-bottom show notes">
+               <div class="w3-custom-card">
+                  <div class="w3-card-img">
+                     <img src="w3-images/evernote.png" alt="Jane" style="width:100%">
+                  </div>
+                  <div class="w3-container">
+                     <h5>notes</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Footer -->
+      <footer class="w3-center w3-white w3-padding-16" id="footer">
+         <p class="footer-text">Made with ❤️ by Akash Mathur</p>
+         <p class="footer-text">All screenshots belong to their respective owners.</p>
+      </footer>
+      <!-- inserting jQuery reference script-->
+      <script src="jquery-3.3.1.js"></script>
+      <script type="text/javascript" src="javascript/typing.js"></script>
+      <script type="text/javascript" src="javascript/script.js"></script>
+   </body>
+</html>
