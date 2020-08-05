@@ -2005,6 +2005,7 @@ a {
 	background-color: #ff357b;
 	color: white;
 	font-weight: 100;
+	font-size: 15px;
 	cursor: pointer;
 	padding: 5px 17px;
 	text-align: center;
@@ -2030,6 +2031,8 @@ a {
 .banner-header {
 	min-height: 100px;
 	background-color: #ff357b;
+	padding-top: 40px!important;
+	padding-bottom: 40px!important;
 	clip-path: polygon(0 0, 100% 25%, 100% 78%, 0% 100%);
 }
 
@@ -2039,10 +2042,10 @@ a {
 	color: #fff;
 }
 
-.w3-padding-40 {
+/*.w3-padding-40 {
 	padding-top: 40px!important;
 	padding-bottom: 40px!important
-}
+}*/
 
 .web-title {
 	display: inline-block;
@@ -2057,6 +2060,34 @@ a {
 	max-width: 1400px;
 	margin-left: auto;
 	margin-right: auto
+}
+
+@media(max-width:528px) {
+
+	.banner-header {
+		min-height: 100px;
+		background-color: #ff357b;
+		padding-top: 20px!important;
+		padding-bottom: 20px!important;
+		clip-path: polygon(0 0, 100% 25%, 100% 78%, 0% 100%);
+	}
+
+	.banner-header p {
+		text-align: center!important;
+		font-size: 22px;
+		color: #fff;
+	}
+
+	.w3-custom-button {
+		font-size: 17px;
+	}
+
+	.submit-resource-btn {
+		font-size: 13px;
+		padding: 3px 11px;
+	}
+
+
 }
 
 @media(min-width:640px) {
@@ -2074,19 +2105,6 @@ a {
 		margin-right: auto
 	}
 }
-
-
-/*@media (min-width:993px) {
-	.w3-col.l3 {
-		width: 24.99999%
-	}
-
-	.w3-auto-custom {
-         max-width: 1024px;
-         margin-left: auto;
-	     margin-right: auto
-    }
-}*/
 
 @media(min-width:1024px) {
 	.w3-auto-custom {
