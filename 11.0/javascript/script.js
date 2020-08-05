@@ -15,6 +15,39 @@ $(window).resize(function() {
     footerAlign();
 });
 
+
+$("#all-btn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#content-resource").offset().top
+    }, 1000);
+});
+
+$("#lectures-btn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#content-resource").offset().top
+    }, 1000);
+});
+
+$("#notes-btn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#content-resource").offset().top
+    }, 1000);
+});
+
+$("#tm-btn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#content-resource").offset().top
+    }, 1000);
+});
+
+$("#miscellaneous-btn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#content-resource").offset().top
+    }, 1000);
+});
+
+
+
 new TypeIt("#banner-text", {
   speed: 50,
   deleteSpeed: 80,
