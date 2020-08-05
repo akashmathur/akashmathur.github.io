@@ -1945,7 +1945,7 @@ a {
 	background: #fff;
 }
 
-.w3-custom-card:hover {
+body.hasHover .w3-custom-card:hover {
 	cursor: pointer;
 	transform: translateY(-10px);
 	transition: .3s;
@@ -1994,7 +1994,7 @@ a {
 	margin-right: 12px!important
 }
 
-.w3-custom-button:hover {
+body.hasHover .w3-custom-button:hover {
 	cursor: pointer;
 	transform: translateY(-2px);
 	transition: .3s;
@@ -2017,7 +2017,7 @@ a {
 	transition: .3s;
 }
 
-.submit-resource-btn:hover {
+body.hasHover .submit-resource-btn:hover {
 	cursor: pointer;
 	transform: translateY(-2px);
 	transition: .3s;
@@ -2192,3 +2192,7 @@ footer {
 	z-index: 100;
 	background: #fff;
 }
+
+.on { display: none; }
+body.hasHover .on { display: inline; }
+body.hasHover .off { display: none; }
