@@ -564,8 +564,8 @@ a {
 	overflow: hidden;
 	padding-left: 16px;
 	padding-right: 16px;
-	padding-top: 24px;
-	padding-bottom: 0px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
 .w3-center .w3-bar {
@@ -1970,6 +1970,7 @@ a {
 
 .items-center {
 	align-items: center;
+	justify-content: center;
 }
 
 .justify-with-space {
