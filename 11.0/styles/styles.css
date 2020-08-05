@@ -2198,3 +2198,7 @@ footer {
 	z-index: 100;
 	background: #fff;
 }
+
+.card-link {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
