@@ -1979,6 +1979,7 @@ a {
 .w3-custom-button {
 	background-color: #fde7f3;
 	color: black;
+	font-size: 20px;
 	font-weight: 100;
 	cursor: pointer;
 	padding: 5px 17px;
