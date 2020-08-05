@@ -7,58 +7,59 @@ function footerAlign() {
 }
 
 
-$(document).ready(function() {
+$(document).ready(function () {
     footerAlign();
 });
 
-$(window).resize(function() {
+$(window).resize(function () {
     footerAlign();
 });
 
 
-$("#all-btn").click(function() {
+$("#all-btn").click(function () {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
     }, 1000);
 });
 
-$("#lectures-btn").click(function() {
+$("#lectures-btn").click(function () {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
     }, 1000);
 });
 
-$("#notes-btn").click(function() {
+$("#notes-btn").click(function () {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
     }, 1000);
 });
 
-$("#tm-btn").click(function() {
+$("#tm-btn").click(function () {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
     }, 1000);
 });
 
-$("#miscellaneous-btn").click(function() {
+$("#miscellaneous-btn").click(function () {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
     }, 1000);
 });
-
 
 
 new TypeIt("#banner-text", {
-  speed: 50,
-  deleteSpeed: 80,
-  waitUntilVisible: true,
-})
-.type("Work From Home this Fall Semester.", {delay: 400})
-.move(-30)
-.delete(4)
-.type('Study')
-.move('END')
-.go();
+        speed: 50,
+        deleteSpeed: 80,
+        waitUntilVisible: true,
+    })
+    .type("Work From Home this Fall Semester.", {
+        delay: 400
+    })
+    .move(-30)
+    .delete(4)
+    .type('Study')
+    .move('END')
+    .go();
 
 function showAll() {
 
@@ -78,7 +79,6 @@ function showAll() {
 
     inactiveButton = document.getElementById("miscellaneous-btn");
     inactiveButton.classList.remove("active-btn");
-
 
 
     var lectureCard, i;
@@ -293,7 +293,7 @@ function showMiscellaneous() {
 }
 
 
-window.onscroll = function() {
+window.onscroll = function () {
     myFunction()
 };
 
