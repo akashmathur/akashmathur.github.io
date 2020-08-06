@@ -1997,10 +1997,10 @@ a {
 
 .w3-custom-button:hover {
 	cursor: pointer;
-	transform: translateY(-2px);
+	transform: translateY(-7px);
 	transition: .3s;
-	background: #ff357b;
-	color: white;
+	/*background: #ff357b;*/
+	/*color: white;*/
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
