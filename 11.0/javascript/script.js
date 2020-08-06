@@ -16,19 +16,10 @@ $(window).resize(function () {
 });
 
 
+
+
+
 $("#all-btn").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#content-resource").offset().top
-    }, 300);
-});
-
-$("#lectures-btn").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#content-resource").offset().top
-    }, 300);
-});
-
-$("#notes-btn").click(function () {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
     }, 300);
@@ -40,7 +31,32 @@ $("#tm-btn").click(function () {
     }, 300);
 });
 
-$("#miscellaneous-btn").click(function () {
+$("#org-btn").click(function () {
+    $('html, body').animate({
+        scrollTop: $("#content-resource").offset().top
+    }, 300);
+});
+
+$("#notes-btn").click(function () {
+    $('html, body').animate({
+        scrollTop: $("#content-resource").offset().top
+    }, 300);
+});
+
+
+$("#focused-btn").click(function () {
+    $('html, body').animate({
+        scrollTop: $("#content-resource").offset().top
+    }, 300);
+});
+
+$("#hw-btn").click(function () {
+    $('html, body').animate({
+        scrollTop: $("#content-resource").offset().top
+    }, 300);
+});
+
+$("#misc-btn").click(function () {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
     }, 300);
@@ -89,37 +105,28 @@ function showAll() {
 
     var activeButton, inactiveButton;
 
-    activeButton = document.getElementById("all-btn");
-    activeButton.classList.add("active-btn");
+    inactiveButton = document.getElementById("tm-btn");
+    inactiveButton.classList.remove("active-btn");
 
-    inactiveButton = document.getElementById("lectures-btn");
+    inactiveButton = document.getElementById("org-btn");
     inactiveButton.classList.remove("active-btn");
 
     inactiveButton = document.getElementById("notes-btn");
     inactiveButton.classList.remove("active-btn");
 
-    inactiveButton = document.getElementById("tm-btn");
+    inactiveButton = document.getElementById("focused-btn");
     inactiveButton.classList.remove("active-btn");
 
-    inactiveButton = document.getElementById("miscellaneous-btn");
+    inactiveButton = document.getElementById("hw-btn");
     inactiveButton.classList.remove("active-btn");
 
+    inactiveButton = document.getElementById("misc-btn");
+    inactiveButton.classList.remove("active-btn");
 
-    var lectureCard, i;
-    lectureCard = document.querySelectorAll(".lectures");
-    for (i = 0; i < lectureCard.length; i++) {
-        if (lectureCard[i].style.display === "none") {
-            lectureCard[i].style.display = "block";
-        }
-    }
+    activeButton = document.getElementById("all-btn");
+    activeButton.classList.add("active-btn");
 
-    notesCard = document.querySelectorAll(".notes");
-    for (i = 0; i < notesCard.length; i++) {
-        if (notesCard[i].style.display === "none") {
-            notesCard[i].style.display = "block";
-        }
-    }
-
+    var tmCard, i;
     tmCard = document.querySelectorAll(".tm");
     for (i = 0; i < tmCard.length; i++) {
         if (tmCard[i].style.display === "none") {
@@ -127,102 +134,39 @@ function showAll() {
         }
     }
 
-    miscellaneousCard = document.querySelectorAll(".miscellaneous");
-    for (i = 0; i < miscellaneousCard.length; i++) {
-        if (miscellaneousCard[i].style.display === "none") {
-            miscellaneousCard[i].style.display = "block";
-        }
-    }
-}
-
-function showLecture() {
-
-
-    var activeButton, inactiveButton;
-
-    activeButton = document.getElementById("lectures-btn");
-    activeButton.classList.add("active-btn");
-
-    inactiveButton = document.getElementById("all-btn");
-    inactiveButton.classList.remove("active-btn");
-
-    inactiveButton = document.getElementById("notes-btn");
-    inactiveButton.classList.remove("active-btn");
-
-    inactiveButton = document.getElementById("tm-btn");
-    inactiveButton.classList.remove("active-btn");
-
-    inactiveButton = document.getElementById("miscellaneous-btn");
-    inactiveButton.classList.remove("active-btn");
-
-    var lectureCard, i;
-    lectureCard = document.querySelectorAll(".lectures");
-
-    for (i = 0; i < lectureCard.length; i++) {
-
-        if (lectureCard[i].style.display === "none") {
-            lectureCard[i].style.display = "block";
+    var orgCard = document.querySelectorAll(".org");
+    for (i = 0; i < orgCard.length; i++) {
+        if (orgCard[i].style.display === "none") {
+            orgCard[i].style.display = "block";
         }
     }
 
-    notesCard = document.querySelectorAll(".notes");
+    var notesCard = document.querySelectorAll(".notes");
     for (i = 0; i < notesCard.length; i++) {
-        notesCard[i].style.display = "none";
-    }
-
-    tmCard = document.querySelectorAll(".tm");
-    for (i = 0; i < tmCard.length; i++) {
-        tmCard[i].style.display = "none";
-    }
-
-    miscellaneousCard = document.querySelectorAll(".miscellaneous");
-    for (i = 0; i < miscellaneousCard.length; i++) {
-        miscellaneousCard[i].style.display = "none";
-    }
-}
-
-function showNotes() {
-
-    var activeButton, inactiveButton;
-
-    activeButton = document.getElementById("notes-btn");
-    activeButton.classList.add("active-btn");
-
-    inactiveButton = document.getElementById("lectures-btn");
-    inactiveButton.classList.remove("active-btn");
-
-    inactiveButton = document.getElementById("all-btn");
-    inactiveButton.classList.remove("active-btn");
-
-    inactiveButton = document.getElementById("tm-btn");
-    inactiveButton.classList.remove("active-btn");
-
-    inactiveButton = document.getElementById("miscellaneous-btn");
-    inactiveButton.classList.remove("active-btn");
-
-    var notesCard, i;
-    notesCard = document.querySelectorAll(".notes");
-
-    for (i = 0; i < notesCard.length; i++) {
-
         if (notesCard[i].style.display === "none") {
             notesCard[i].style.display = "block";
         }
     }
 
-    lectureCard = document.querySelectorAll(".lectures");
-    for (i = 0; i < lectureCard.length; i++) {
-        lectureCard[i].style.display = "none";
+    var focusCard = document.querySelectorAll(".focus");
+    for (i = 0; i < focusCard.length; i++) {
+        if (focusCard[i].style.display === "none") {
+            focusCard[i].style.display = "block";
+        }
     }
 
-    tmCard = document.querySelectorAll(".tm");
-    for (i = 0; i < tmCard.length; i++) {
-        tmCard[i].style.display = "none";
+    var hwCard = document.querySelectorAll(".hw");
+    for (i = 0; i < hwCard.length; i++) {
+        if (hwCard[i].style.display === "none") {
+            hwCard[i].style.display = "block";
+        }
     }
 
-    miscellaneousCard = document.querySelectorAll(".miscellaneous");
-    for (i = 0; i < miscellaneousCard.length; i++) {
-        miscellaneousCard[i].style.display = "none";
+    var miscCard = document.querySelectorAll(".misc");
+    for (i = 0; i < miscCard.length; i++) {
+        if (miscCard[i].style.display === "none") {
+            miscCard[i].style.display = "block";
+        }
     }
 }
 
@@ -233,86 +177,422 @@ function showTimeManagement() {
     activeButton = document.getElementById("tm-btn");
     activeButton.classList.add("active-btn");
 
-    inactiveButton = document.getElementById("lectures-btn");
+    inactiveButton = document.getElementById("org-btn");
     inactiveButton.classList.remove("active-btn");
 
     inactiveButton = document.getElementById("notes-btn");
     inactiveButton.classList.remove("active-btn");
 
+    inactiveButton = document.getElementById("focused-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("hw-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("misc-btn");
+    inactiveButton.classList.remove("active-btn");
+
     inactiveButton = document.getElementById("all-btn");
     inactiveButton.classList.remove("active-btn");
 
-    inactiveButton = document.getElementById("miscellaneous-btn");
-    inactiveButton.classList.remove("active-btn");
+/*
 
+tmCard
+orgCard
+notesCard
+focusCard
+hwCard
+miscCard
+*/
+
+    //show tm card
     var tmCard, i;
     tmCard = document.querySelectorAll(".tm");
-
     for (i = 0; i < tmCard.length; i++) {
-
         if (tmCard[i].style.display === "none") {
             tmCard[i].style.display = "block";
         }
     }
 
-    notesCard = document.querySelectorAll(".notes");
+    //hide all the other cards
+    var orgCard = document.querySelectorAll(".org");
+    for (i = 0; i < orgCard.length; i++) {
+        orgCard[i].style.display = "none";
+    }
+
+    var notesCard = document.querySelectorAll(".notes");
     for (i = 0; i < notesCard.length; i++) {
         notesCard[i].style.display = "none";
     }
 
-    lectureCard = document.querySelectorAll(".lectures");
-    for (i = 0; i < lectureCard.length; i++) {
-        lectureCard[i].style.display = "none";
+    var focusCard = document.querySelectorAll(".focus");
+    for (i = 0; i < focusCard.length; i++) {
+        focusCard[i].style.display = "none";
     }
 
-    miscellaneousCard = document.querySelectorAll(".miscellaneous");
-    for (i = 0; i < miscellaneousCard.length; i++) {
-        miscellaneousCard[i].style.display = "none";
+    var hwCard = document.querySelectorAll(".hw");
+    for (i = 0; i < hwCard.length; i++) {
+        hwCard[i].style.display = "none";
+    }
+
+    var miscCard = document.querySelectorAll(".misc");
+    for (i = 0; i < miscCard.length; i++) {
+        miscCard[i].style.display = "none";
     }
 }
 
-function showMiscellaneous() {
+function showOrganization() {
 
     var activeButton, inactiveButton;
 
-    activeButton = document.getElementById("miscellaneous-btn");
+    activeButton = document.getElementById("org-btn");
     activeButton.classList.add("active-btn");
-
-    inactiveButton = document.getElementById("lectures-btn");
-    inactiveButton.classList.remove("active-btn");
 
     inactiveButton = document.getElementById("notes-btn");
     inactiveButton.classList.remove("active-btn");
 
-    inactiveButton = document.getElementById("tm-btn");
+    inactiveButton = document.getElementById("focused-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("hw-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("misc-btn");
     inactiveButton.classList.remove("active-btn");
 
     inactiveButton = document.getElementById("all-btn");
     inactiveButton.classList.remove("active-btn");
 
-    var miscellaneousCard, i;
-    miscellaneousCard = document.querySelectorAll(".miscellaneous");
+    inactiveButton = document.getElementById("tm-btn");
+    inactiveButton.classList.remove("active-btn");
 
-    for (i = 0; i < miscellaneousCard.length; i++) {
+/*
 
-        if (miscellaneousCard[i].style.display === "none") {
-            miscellaneousCard[i].style.display = "block";
+tmCard
+orgCard
+notesCard
+focusCard
+hwCard
+miscCard
+*/
+
+    //show org card
+    var orgCard, i;
+    orgCard = document.querySelectorAll(".org");
+    for (i = 0; i < orgCard.length; i++) {
+        if (orgCard[i].style.display === "none") {
+            orgCard[i].style.display = "block";
         }
     }
 
-    lectureCard = document.querySelectorAll(".lectures");
-    for (i = 0; i < lectureCard.length; i++) {
-        lectureCard[i].style.display = "none";
+    //hide all the other cards
+
+    var notesCard = document.querySelectorAll(".notes");
+    for (i = 0; i < notesCard.length; i++) {
+        notesCard[i].style.display = "none";
     }
 
-    tmCard = document.querySelectorAll(".tm");
+    var focusCard = document.querySelectorAll(".focus");
+    for (i = 0; i < focusCard.length; i++) {
+        focusCard[i].style.display = "none";
+    }
+
+    var hwCard = document.querySelectorAll(".hw");
+    for (i = 0; i < hwCard.length; i++) {
+        hwCard[i].style.display = "none";
+    }
+
+    var miscCard = document.querySelectorAll(".misc");
+    for (i = 0; i < miscCard.length; i++) {
+        miscCard[i].style.display = "none";
+    }
+
+    var tmCard = document.querySelectorAll(".tm");
+    for (i = 0; i < tmCard.length; i++) {
+        tmCard[i].style.display = "none";
+    }
+}
+
+function showNotes() {
+    
+    var activeButton, inactiveButton;
+
+    activeButton = document.getElementById("notes-btn");
+    activeButton.classList.add("active-btn");
+
+    inactiveButton = document.getElementById("focused-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("hw-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("misc-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("all-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("tm-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("org-btn");
+    inactiveButton.classList.remove("active-btn");
+
+/*
+
+tmCard
+orgCard
+notesCard
+focusCard
+hwCard
+miscCard
+*/
+
+    //show notes card
+    var notesCard, i;
+    notesCard = document.querySelectorAll(".notes");
+    for (i = 0; i < notesCard.length; i++) {
+        if (notesCard[i].style.display === "none") {
+            notesCard[i].style.display = "block";
+        }
+    }
+
+    //hide all the other cards
+    var focusCard = document.querySelectorAll(".focus");
+    for (i = 0; i < focusCard.length; i++) {
+        focusCard[i].style.display = "none";
+    }
+
+    var hwCard = document.querySelectorAll(".hw");
+    for (i = 0; i < hwCard.length; i++) {
+        hwCard[i].style.display = "none";
+    }
+
+    var miscCard = document.querySelectorAll(".misc");
+    for (i = 0; i < miscCard.length; i++) {
+        miscCard[i].style.display = "none";
+    }
+
+    var tmCard = document.querySelectorAll(".tm");
     for (i = 0; i < tmCard.length; i++) {
         tmCard[i].style.display = "none";
     }
 
-    notesCard = document.querySelectorAll(".notes");
+    var orgCard = document.querySelectorAll(".org");
+    for (i = 0; i < orgCard.length; i++) {
+        orgCard[i].style.display = "none";
+    }
+}
+
+function showFocused() {
+    
+    var activeButton, inactiveButton;
+
+    activeButton = document.getElementById("focused-btn");
+    activeButton.classList.add("active-btn");
+
+    inactiveButton = document.getElementById("hw-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("misc-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("all-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("tm-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("org-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("notes-btn");
+    inactiveButton.classList.remove("active-btn");
+
+/*
+
+tmCard
+orgCard
+notesCard
+focusCard
+hwCard
+miscCard
+*/
+
+    //show notes card
+    var focusCard, i;
+    focusCard = document.querySelectorAll(".focus");
+    for (i = 0; i < focusCard.length; i++) {
+        if (focusCard[i].style.display === "none") {
+            focusCard[i].style.display = "block";
+        }
+    }
+
+    //hide all the other cards
+    var hwCard = document.querySelectorAll(".hw");
+    for (i = 0; i < hwCard.length; i++) {
+        hwCard[i].style.display = "none";
+    }
+
+    var miscCard = document.querySelectorAll(".misc");
+    for (i = 0; i < miscCard.length; i++) {
+        miscCard[i].style.display = "none";
+    }
+
+    var tmCard = document.querySelectorAll(".tm");
+    for (i = 0; i < tmCard.length; i++) {
+        tmCard[i].style.display = "none";
+    }
+
+    var orgCard = document.querySelectorAll(".org");
+    for (i = 0; i < orgCard.length; i++) {
+        orgCard[i].style.display = "none";
+    }
+
+    var notesCard = document.querySelectorAll(".notes");
     for (i = 0; i < notesCard.length; i++) {
         notesCard[i].style.display = "none";
+    }
+}
+
+function showHealthWellness() {
+    
+    var activeButton, inactiveButton;
+
+    activeButton = document.getElementById("hw-btn");
+    activeButton.classList.add("active-btn");
+
+    inactiveButton = document.getElementById("misc-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("all-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("tm-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("org-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("notes-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("focused-btn");
+    inactiveButton.classList.remove("active-btn");
+
+/*
+
+tmCard
+orgCard
+notesCard
+focusCard
+hwCard
+miscCard
+*/
+
+    //show notes card
+    var hwCard, i;
+    hwCard = document.querySelectorAll(".hw");
+    for (i = 0; i < hwCard.length; i++) {
+        if (hwCard[i].style.display === "none") {
+            hwCard[i].style.display = "block";
+        }
+    }
+
+    //hide all the other cards
+    var miscCard = document.querySelectorAll(".misc");
+    for (i = 0; i < miscCard.length; i++) {
+        miscCard[i].style.display = "none";
+    }
+
+    var tmCard = document.querySelectorAll(".tm");
+    for (i = 0; i < tmCard.length; i++) {
+        tmCard[i].style.display = "none";
+    }
+
+    var orgCard = document.querySelectorAll(".org");
+    for (i = 0; i < orgCard.length; i++) {
+        orgCard[i].style.display = "none";
+    }
+
+    var notesCard = document.querySelectorAll(".notes");
+    for (i = 0; i < notesCard.length; i++) {
+        notesCard[i].style.display = "none";
+    }
+
+    var focusCard = document.querySelectorAll(".focus");
+    for (i = 0; i < focusCard.length; i++) {
+        focusCard[i].style.display = "none";
+    }
+}
+
+function showMiscellaneous() {
+    var activeButton, inactiveButton;
+
+    activeButton = document.getElementById("misc-btn");
+    activeButton.classList.add("active-btn");
+
+    inactiveButton = document.getElementById("all-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("tm-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("org-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("notes-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("focused-btn");
+    inactiveButton.classList.remove("active-btn");
+
+    inactiveButton = document.getElementById("hw-btn");
+    inactiveButton.classList.remove("active-btn");
+
+/*
+
+tmCard
+orgCard
+notesCard
+focusCard
+hwCard
+miscCard
+*/
+
+    //show notes card
+    var miscCard, i;
+    miscCard = document.querySelectorAll(".misc");
+    for (i = 0; i < miscCard.length; i++) {
+        if (miscCard[i].style.display === "none") {
+            miscCard[i].style.display = "block";
+        }
+    }
+
+    //hide all the other cards
+    var tmCard = document.querySelectorAll(".tm");
+    for (i = 0; i < tmCard.length; i++) {
+        tmCard[i].style.display = "none";
+    }
+
+    var orgCard = document.querySelectorAll(".org");
+    for (i = 0; i < orgCard.length; i++) {
+        orgCard[i].style.display = "none";
+    }
+
+    var notesCard = document.querySelectorAll(".notes");
+    for (i = 0; i < notesCard.length; i++) {
+        notesCard[i].style.display = "none";
+    }
+
+    var focusCard = document.querySelectorAll(".focus");
+    for (i = 0; i < focusCard.length; i++) {
+        focusCard[i].style.display = "none";
+    }
+
+    var hwCard = document.querySelectorAll(".hw");
+    for (i = 0; i < hwCard.length; i++) {
+        hwCard[i].style.display = "none";
     }
 }
 
