@@ -6,57 +6,55 @@ function footerAlign() {
     $('footer').css('height', footerHeight);
 }
 
-
-$(document).ready(function () {
+$(document).ready(function() {
     footerAlign();
 });
 
-$(window).resize(function () {
+$(window).resize(function() {
     footerAlign();
 });
 
 
 
 
-
-$("#all-btn").click(function () {
+$("#all-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
     }, 300);
 });
 
-$("#tm-btn").click(function () {
+$("#tm-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
     }, 300);
 });
 
-$("#org-btn").click(function () {
+$("#org-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
     }, 300);
 });
 
-$("#notes-btn").click(function () {
+$("#notes-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
     }, 300);
 });
 
 
-$("#focused-btn").click(function () {
+$("#focused-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
     }, 300);
 });
 
-$("#hw-btn").click(function () {
+$("#hw-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
     }, 300);
 });
 
-$("#misc-btn").click(function () {
+$("#misc-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
     }, 300);
@@ -78,26 +76,26 @@ new TypeIt("#banner-text", {
     .go();
 
 function hasTouch() {
-  return 'ontouchstart' in document.documentElement
-         || navigator.maxTouchPoints > 0
-         || navigator.msMaxTouchPoints > 0;
+    return 'ontouchstart' in document.documentElement ||
+        navigator.maxTouchPoints > 0 ||
+        navigator.msMaxTouchPoints > 0;
 }
 
 if (hasTouch()) { // remove all the :hover stylesheets
-  try { // prevent exception on browsers not supporting DOM styleSheets properly
-    for (var si in document.styleSheets) {
-      var styleSheet = document.styleSheets[si];
-      if (!styleSheet.rules) continue;
+    try { // prevent exception on browsers not supporting DOM styleSheets properly
+        for (var si in document.styleSheets) {
+            var styleSheet = document.styleSheets[si];
+            if (!styleSheet.rules) continue;
 
-      for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-        if (!styleSheet.rules[ri].selectorText) continue;
+            for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                if (!styleSheet.rules[ri].selectorText) continue;
 
-        if (styleSheet.rules[ri].selectorText.match(':hover')) {
-          styleSheet.deleteRule(ri);
+                if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                    styleSheet.deleteRule(ri);
+                }
+            }
         }
-      }
-    }
-  } catch (ex) {}
+    } catch (ex) {}
 }
 
 
@@ -195,15 +193,15 @@ function showTimeManagement() {
     inactiveButton = document.getElementById("all-btn");
     inactiveButton.classList.remove("active-btn");
 
-/*
+    /*
 
-tmCard
-orgCard
-notesCard
-focusCard
-hwCard
-miscCard
-*/
+    tmCard
+    orgCard
+    notesCard
+    focusCard
+    hwCard
+    miscCard
+    */
 
     //show tm card
     var tmCard, i;
@@ -266,15 +264,15 @@ function showOrganization() {
     inactiveButton = document.getElementById("tm-btn");
     inactiveButton.classList.remove("active-btn");
 
-/*
+    /*
 
-tmCard
-orgCard
-notesCard
-focusCard
-hwCard
-miscCard
-*/
+    tmCard
+    orgCard
+    notesCard
+    focusCard
+    hwCard
+    miscCard
+    */
 
     //show org card
     var orgCard, i;
@@ -314,7 +312,7 @@ miscCard
 }
 
 function showNotes() {
-    
+
     var activeButton, inactiveButton;
 
     activeButton = document.getElementById("notes-btn");
@@ -338,15 +336,15 @@ function showNotes() {
     inactiveButton = document.getElementById("org-btn");
     inactiveButton.classList.remove("active-btn");
 
-/*
+    /*
 
-tmCard
-orgCard
-notesCard
-focusCard
-hwCard
-miscCard
-*/
+    tmCard
+    orgCard
+    notesCard
+    focusCard
+    hwCard
+    miscCard
+    */
 
     //show notes card
     var notesCard, i;
@@ -385,7 +383,7 @@ miscCard
 }
 
 function showFocused() {
-    
+
     var activeButton, inactiveButton;
 
     activeButton = document.getElementById("focused-btn");
@@ -409,15 +407,15 @@ function showFocused() {
     inactiveButton = document.getElementById("notes-btn");
     inactiveButton.classList.remove("active-btn");
 
-/*
+    /*
 
-tmCard
-orgCard
-notesCard
-focusCard
-hwCard
-miscCard
-*/
+    tmCard
+    orgCard
+    notesCard
+    focusCard
+    hwCard
+    miscCard
+    */
 
     //show notes card
     var focusCard, i;
@@ -456,7 +454,7 @@ miscCard
 }
 
 function showHealthWellness() {
-    
+
     var activeButton, inactiveButton;
 
     activeButton = document.getElementById("hw-btn");
@@ -480,15 +478,15 @@ function showHealthWellness() {
     inactiveButton = document.getElementById("focused-btn");
     inactiveButton.classList.remove("active-btn");
 
-/*
+    /*
 
-tmCard
-orgCard
-notesCard
-focusCard
-hwCard
-miscCard
-*/
+    tmCard
+    orgCard
+    notesCard
+    focusCard
+    hwCard
+    miscCard
+    */
 
     //show notes card
     var hwCard, i;
@@ -550,15 +548,15 @@ function showMiscellaneous() {
     inactiveButton = document.getElementById("hw-btn");
     inactiveButton.classList.remove("active-btn");
 
-/*
+    /*
 
-tmCard
-orgCard
-notesCard
-focusCard
-hwCard
-miscCard
-*/
+    tmCard
+    orgCard
+    notesCard
+    focusCard
+    hwCard
+    miscCard
+    */
 
     //show notes card
     var miscCard, i;
@@ -599,34 +597,49 @@ miscCard
 
 
 function selectorNav() {
-  var x = document.getElementById("selectionNav").value;
-  
-  if(x === "All"){
-    showAll();
-  }
-  else if(x === "Managing Time"){
-    showTimeManagement();
-  }
-  else if(x === "Staying Organized"){
-    showOrganization();
-  }
-  else if(x === "Taking Notes"){
-    showNotes();
-  }
-  else if(x === "Staying Focused"){
-    showFocused();
-  }
-  else if(x === "Health & Wellness"){
-    showHealthWellness();
-  }
-  else if(x === "Miscellaneous"){
-    showMiscellaneous();
-  }
+    var x = document.getElementById("selectionNav").value;
+
+    if (x === "All") {
+        showAll();
+        $('html, body').animate({
+            scrollTop: $("#content-resource").offset().top
+        }, 300);
+    } else if (x === "Managing Time") {
+        showTimeManagement();
+        $('html, body').animate({
+            scrollTop: $("#content-resource").offset().top
+        }, 300);
+    } else if (x === "Staying Organized") {
+        showOrganization();
+        $('html, body').animate({
+            scrollTop: $("#content-resource").offset().top
+        }, 300);
+    } else if (x === "Taking Notes") {
+        showNotes();
+        $('html, body').animate({
+            scrollTop: $("#content-resource").offset().top
+        }, 300);
+    } else if (x === "Staying Focused") {
+        showFocused();
+        $('html, body').animate({
+            scrollTop: $("#content-resource").offset().top
+        }, 300);
+    } else if (x === "Health & Wellness") {
+        showHealthWellness();
+        $('html, body').animate({
+            scrollTop: $("#content-resource").offset().top
+        }, 300);
+    } else if (x === "Miscellaneous") {
+        showMiscellaneous();
+        $('html, body').animate({
+            scrollTop: $("#content-resource").offset().top
+        }, 300);
+    }
 }
 
 
 
-window.onscroll = function () {
+window.onscroll = function() {
     myFunction()
 };
 
