@@ -1941,7 +1941,7 @@ a {
 	overflow: hidden;
 	transition: .3s;
 	min-height: 230px;
-	height: 340px;
+	height: 320px;
 	background: #fff;
 }
 
@@ -1955,6 +1955,7 @@ a {
 	/*font-family: "Work Sans", sans-serif;*/
 	letter-spacing: 0.5px;
 	color: #677B8C;
+	margin: 0px;
 }
 
 .w3-card-img img {
@@ -2092,10 +2093,16 @@ a {
 	}
 }
 
-@media(max-width:480px) {
+@media(max-width:380px) {
 	.w3-custom-button {
 		font-size: 14px;
 		padding: 3px 11px;
+	}
+}
+
+@media(max-width:330px) {
+	.w3-custom-card {
+		height: 340px;
 	}
 }
 
@@ -2204,8 +2211,11 @@ footer {
 	background: #fff;
 }
 
+.w3-container > h5 {
+	margin: 5px 0px;
+}
 hr {
     border: 0;
     border-top: 1px solid #eee;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
