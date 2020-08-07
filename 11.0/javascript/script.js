@@ -597,6 +597,35 @@ miscCard
 }
 
 
+
+function selectorNav() {
+  var x = document.getElementById("selectionNav").value;
+  
+  if(x === "All"){
+    showAll();
+  }
+  else if(x === "Managing Time"){
+    showTimeManagement();
+  }
+  else if(x === "Staying Organized"){
+    showOrganization();
+  }
+  else if(x === "Taking Notes"){
+    showNotes();
+  }
+  else if(x === "Staying Focused"){
+    showFocused();
+  }
+  else if(x === "Health & Wellness"){
+    showHealthWellness();
+  }
+  else if(x === "Miscellaneous"){
+    showMiscellaneous();
+  }
+}
+
+
+
 window.onscroll = function () {
     myFunction()
 };

@@ -20,7 +20,7 @@
    </style>
    <body class="noSelect">
       <!-- Navbar (sit on top) -->
-      <div class="w3-bar w3-white" id="myNavbar">
+      <div class="w3-bar w3-white">
          <div class="w3-auto-custom">
             <div class="flex items-center justify-with-space">
                <div>
@@ -40,7 +40,7 @@
          </div>
       </div>
       <div class="sticky-nav">
-         <div class="w3-bar w3-white" id="myNavbar">
+         <div class="w3-bar w3-white" id="web-nav">
             <div class="flex">
                <nav class="w3-auto-custom">
                   <ul class="flex items-center">
@@ -54,6 +54,17 @@
                   </ul>
                </nav>
             </div>
+         </div>
+         <div id="mobile-nav">
+            <select class="w3-select-custom" id="selectionNav" onchange="selectorNav()">
+               <option value="All">All</option>
+               <option value="Managing Time">Managing Time</option>
+               <option value="Staying Organized">Staying Organized</option>
+               <option value="Taking Notes">Taking Notes</option>
+               <option value="Staying Focused">Staying Focused</option>
+               <option value="Health & Wellness">Health & Wellness</option>
+               <option value="Miscellaneous">Miscellaneous</option>
+            </select>
          </div>
       </div>
       <!-- Team Section -->
