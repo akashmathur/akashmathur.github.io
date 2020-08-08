@@ -24,7 +24,7 @@
          <div class="w3-auto-custom">
             <div class="flex items-center justify-with-space">
                <div>
-                  <a class="web-title" href="#" style="text-decoration: none"><span>Students @ Home</span></a>
+                  <a class="web-title" href="#" style="text-decoration: none"><span>Learn From Home</span></a>
                </div>
                <nav>
                   <ul class="flex">
@@ -40,7 +40,7 @@
          </div>
       </div>
       <div class="sticky-nav">
-         <div class="w3-bar w3-white" id="web-nav">
+         <!-- <div class="w3-bar w3-white" id="web-nav">
             <div class="flex">
                <nav class="w3-auto-custom">
                   <ul class="flex items-center">
@@ -55,7 +55,6 @@
                </nav>
             </div>
          </div>
-         <!-- <i class="fa fa-chevron-down w3-xlarge"></i> -->
          <div id="mobile-nav">
             <select class="w3-select-custom" id="selectionNav" onchange="selectorNav()">
                <option value="All">All</option>
@@ -66,7 +65,27 @@
                <option value="Health & Wellness">Health & Wellness</option>
                <option value="Miscellaneous">Miscellaneous</option>
             </select>
+         </div> -->
+
+
+         <div class="w3-bar w3-white">
+            <div class="flex">
+               <nav class="w3-auto-custom">
+                  <ul class="flex items-center">
+                     <li class="w3-custom-button active-btn" id="all-btn" onclick="showAll()">All</li>
+                     <li class="w3-custom-button" id="tm-btn" onclick="showTimeManagement()">Managing Time</li>
+                     <li class="w3-custom-button" id="org-btn" onclick="showOrganization()">Staying Organized</li>
+                     <li class="w3-custom-button" id="notes-btn" onclick="showNotes()">Taking Notes</li>
+                     <li class="w3-custom-button" id="focused-btn" onclick="showFocused()">Staying Focused</li>
+                     <li class="w3-custom-button" id="hw-btn" onclick="showHealthWellness()">Health & Wellness</li>
+                     <li class="w3-custom-button" id="misc-btn" onclick="showMiscellaneous()">Miscellaneous</li>
+                  </ul>
+               </nav>
+            </div>
          </div>
+
+
+
       </div>
       <!-- Team Section -->
       <div class="w3-container" style="padding:16px">

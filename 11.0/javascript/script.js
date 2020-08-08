@@ -60,10 +60,14 @@ $("#misc-btn").click(function() {
     }, 300);
 });
 
+// Work From Home this Fall Semester.
+// Learn From Home this Fall Semester.
+
 
 new TypeIt("#banner-text", {
-        speed: 50,
+        speed: 40,
         deleteSpeed: 80,
+        startDelay: 900,
         waitUntilVisible: true,
     })
     .type("Work From Home this Fall Semester.", {
@@ -71,7 +75,10 @@ new TypeIt("#banner-text", {
     })
     .move(-30)
     .delete(4)
-    .type('Study')
+    .type('Learn')
+    .move(13)
+    .move(-18)
+    .type('Resources to ')
     .move('END')
     .go();
 
