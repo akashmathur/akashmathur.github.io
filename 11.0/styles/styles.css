@@ -1365,6 +1365,10 @@
  .w3-border-pale-blue, .w3-hover-border-pale-blue:hover {
      border-color: #e7ffff!important 
 }
+
+
+/************CUSTOM CSS************/
+
  .w3-custom-card {
      border: none;
      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -1381,8 +1385,6 @@
      transition: .3s;
 }
  .w3-card-text {
-    /*font-family: "Work Sans", sans-serif;
-    */
      letter-spacing: 0.5px;
      color: #677B8C;
      margin: 0px;
@@ -1428,10 +1430,6 @@
      cursor: pointer;
      transform: translateY(-7px);
      transition: .3s;
-    /*background: #ff357b;
-    */
-    /*color: white;
-    */
      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
  .submit-resource-btn {
@@ -1470,20 +1468,12 @@
      font-size: 40px;
      color: #ff357b;
 }
-/*.w3-padding-40 {
-     padding-top: 40px!important;
-     padding-bottom: 40px!important 
-}
-*/
+
  .web-title {
      display: inline-block;
      font-weight: 700;
      font-size: 24px;
-    /*font-family: "Roboto", sans-serif;
-    */
      letter-spacing: 0.5px;
-    /*margin: 15px;
-    */
 }
  .w3-auto-custom {
      max-width: 1400px;
@@ -1512,7 +1502,7 @@
          color: #ff357b;
     }
      .w3-custom-button {
-         font-size: 17px;
+         font-size: 15px;
     }
      .submit-resource-btn {
          font-size: 13px;
@@ -1640,10 +1630,3 @@
      margin: 30px;
      font-size: 20px;
 }
-
-.bgimg {
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-}
- 

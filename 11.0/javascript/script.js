@@ -60,10 +60,6 @@ $("#misc-btn").click(function() {
     }, 300);
 });
 
-
-// Work From Home this Fall Semester.
-// Learn From Home this Fall Semester.
-
 new TypeIt("#banner-text", {
         speed: 40,
         deleteSpeed: 80,
@@ -197,16 +193,6 @@ function showTimeManagement() {
     inactiveButton = document.getElementById("all-btn");
     inactiveButton.classList.remove("active-btn");
 
-    /*
-
-    tmCard
-    orgCard
-    notesCard
-    focusCard
-    hwCard
-    miscCard
-    */
-
     //show tm card
     var tmCard, i;
     tmCard = document.querySelectorAll(".tm");
@@ -267,16 +253,6 @@ function showOrganization() {
 
     inactiveButton = document.getElementById("tm-btn");
     inactiveButton.classList.remove("active-btn");
-
-    /*
-
-    tmCard
-    orgCard
-    notesCard
-    focusCard
-    hwCard
-    miscCard
-    */
 
     //show org card
     var orgCard, i;
@@ -340,15 +316,6 @@ function showNotes() {
     inactiveButton = document.getElementById("org-btn");
     inactiveButton.classList.remove("active-btn");
 
-    /*
-
-    tmCard
-    orgCard
-    notesCard
-    focusCard
-    hwCard
-    miscCard
-    */
 
     //show notes card
     var notesCard, i;
@@ -411,16 +378,6 @@ function showFocused() {
     inactiveButton = document.getElementById("notes-btn");
     inactiveButton.classList.remove("active-btn");
 
-    /*
-
-    tmCard
-    orgCard
-    notesCard
-    focusCard
-    hwCard
-    miscCard
-    */
-
     //show notes card
     var focusCard, i;
     focusCard = document.querySelectorAll(".focus");
@@ -482,16 +439,6 @@ function showHealthWellness() {
     inactiveButton = document.getElementById("focused-btn");
     inactiveButton.classList.remove("active-btn");
 
-    /*
-
-    tmCard
-    orgCard
-    notesCard
-    focusCard
-    hwCard
-    miscCard
-    */
-
     //show notes card
     var hwCard, i;
     hwCard = document.querySelectorAll(".hw");
@@ -552,15 +499,6 @@ function showMiscellaneous() {
     inactiveButton = document.getElementById("hw-btn");
     inactiveButton.classList.remove("active-btn");
 
-    /*
-
-    tmCard
-    orgCard
-    notesCard
-    focusCard
-    hwCard
-    miscCard
-    */
 
     //show notes card
     var miscCard, i;
