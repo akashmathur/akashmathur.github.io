@@ -66,13 +66,12 @@ new TypeIt("#banner-text", {
         startDelay: 900,
         waitUntilVisible: true,
     })
-    .type("Work From Home this Fall Semester", {
+    .type("Stay Productive & Healthy this Fall Semester. ", {
         delay: 400
     })
-    .move(-33)
+    .move(-46)
     .type('Resources to ')
     .move('END')
-    .type('. ')
     .go();
 
 function hasTouch() {
