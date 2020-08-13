@@ -15,8 +15,6 @@ $(window).resize(function() {
 });
 
 
-
-
 $("#all-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#content-resource").offset().top
@@ -578,19 +576,24 @@ function selectorNav() {
     }
 }
 
-
+function chevronClick() {
+    $('html, body').animate({
+        scrollTop: $("#content-resource").offset().top
+    }, 300);
+}
 
 window.onscroll = function() {
-    myFunction()
+    myCustomStickyNav()
 };
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+var categories = document.getElementById("category-nav");
+var chevron = document.getElementById("chevronDiv");
+var sticky = categories.offsetTop;
 
-function myFunction() {
+function myCustomStickyNav() {
     if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
+        chevron.classList.add("chevronShow")
     } else {
-        navbar.classList.remove("sticky");
+        chevron.classList.remove("chevronShow");
     }
 }
