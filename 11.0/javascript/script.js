@@ -586,9 +586,9 @@ window.onscroll = function() {
     myCustomStickyNav()
 };
 
-var categories = document.getElementById("category-nav");
+var showAfter = document.getElementById("first-resource");
 var chevron = document.getElementById("chevronDiv");
-var sticky = categories.offsetTop;
+var sticky = showAfter.offsetTop;
 
 function myCustomStickyNav() {
     if (window.pageYOffset >= sticky) {
