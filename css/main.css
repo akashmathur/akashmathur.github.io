@@ -85,6 +85,13 @@
 	-webkit-font-smoothing: antialiased;
 }
 
+#mozilla-img {
+	background-image: url("../images/ffx.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
 #blacberry-img {
 	background-image: url("../images/bb.png");
 	background-repeat: no-repeat;
