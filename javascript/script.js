@@ -175,11 +175,7 @@ new TypeIt("#whoIAm", {
 .delete(9)
 .type('Designer.', {delay: 1200})
 .delete(9)
-.type("Product Manager", {delay: 1200})
-.move(-15)
-.type('Aspiring ')
-.move('END')
-.type('.')
+.type("Product Manager @ TikTok.", {delay: 1200})
 .move('END')
 .go();
 
